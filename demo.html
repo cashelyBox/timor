@@ -1,0 +1,1471 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>无标题</title>
+	<link rel="stylesheet" type="text/css" href="style/timor-base.css"/>
+	<link rel="stylesheet" type="text/css" href="style/demo.css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timor.sliderScroll.js"></script>
+</head>
+<body class="timor-layout">
+	<div class="demo-header">
+		<div class="timor-layout-fix">
+			<div class="container timor-block">
+				<ul class="timor-list-horizontal demo-nav timor-nav timor-fl-rt">
+					<li><a href="#">开始使用</a></li>
+					<li><a href="#">Css模块</a></li>
+					<li><a href="#">Js组件</a></li>
+					<li><a href="#">Web组件</a></li>
+					<li><a href="#">开发者功能</a></li>
+				</ul>
+				<div class="timor-clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="timor-layout-fix">
+		<div class="container demo-container">
+			<div class="timor-row">
+				<div class="timor-span-3 timor-slider">
+					<ul class="timor-line-right">
+						<li class="timor-border-left timor-font-weight">基础样式</li>
+						<li><a class="active" href="#base">基础样式<span class="timor-nav-span">Base</span></a></li>
+						<li><a href="#grid">栅格系统<span class="timor-nav-span">Grid</span></a></li>
+						<li><a href="#type">排版<span class="timor-nav-span">Type</span></a></li>
+						<li><a href="#list">列表<span class="timor-nav-span">List</span></a></li>
+						<li class="timor-border-left timor-font-weight">HTML元素</li>
+						<li><a href="#button">按钮<span class="timor-nav-span">Button</span></a></li>
+						<li><a href="#load">加载<span class="timor-nav-span">Load</span></a></li>
+						<li><a href="#form">表单<span class="timor-nav-span">Form</span></a></li>
+						<li><a href="#image">图片<span class="timor-nav-span">Image</span></a></li>
+						<li><a href="#table">表格<span class="timor-nav-span">Table</span></a></li>
+						<li class="timor-border-left timor-font-weight">常用组件</li>
+						<li><a href="#breadnav">面包屑导航<span class="timor-nav-span">Breadnav</span></a></li>
+						<li><a href="#close">关闭按钮<span class="timor-nav-span">Close</span></a></li>
+                        <li><a href="#icon">图标<span class="timor-nav-span">Icon</span></a></li>
+                        <li><a href="#">小徽章<span class="timor-nav-span">Base</span></a></li>
+                        <li><a href="#nav">导航<span class="timor-nav-span">Nav</span></a></li>
+                        <li><a href="#">菜单<span class="timor-nav-span">Base</span></a></li>
+                        <li><a href="#">分页<span class="timor-nav-span">Base</span></a></li>
+                        <li><a href="#panel">面板<span class="timor-nav-span">Panel</span></a></li>
+                        <li><a href="#progress">进度条<span class="timor-nav-span">Progress</span></a></li>
+					</ul>
+				</div>
+				<div class="timor-span-9">
+                    <h3 id="base" class="timor-line-bottom timor-font-weight">基础样式</h3>
+                    <h5>简介</h5>
+                    <h5>Timor提供了很多已经预定义好的样式，能够快速的搭建网站框架。</h5>
+                    <h5 class="timor-list-round timor-font-weight">边框</h5>
+                    <h5>Timor一共提供了5种边框样式<code class="timor-text-red">.timor-line</code>(四周)、<code class="timor-text-red">.timor-line-left</code>(左边框)、<code class="timor-text-red">.timor-line-right</code>(右边框)、<code class="timor-text-red">.timor-line-top</code>(顶边框)、<code class="timor-text-red">.timor-line-bottom</code>(底边框)</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-row">
+                            <div class="timor-span-sm-2 timor-line">.timor-line</div>
+                            <div class="timor-span-sm-2 timor-line-top">.timor-line-top</div>
+                            <div class="timor-span-sm-2 timor-line-right">.timor-line-right</div>
+                            <div class="timor-span-sm-3 timor-line-bottom">.timor-line-bottom</div>
+                            <div class="timor-span-sm-3 timor-line-left">.timor-line-bottom</div>
+                        </div>
+                    </div>
+                    <h5 class="timor-list-round timor-font-weight">文本对齐</h5>
+                    <h5>Timor一共提供了4种文本对齐样式<code class="timor-text-red">.timor-text-a-l</code>(左对齐)、<code class="timor-text-red">.timor-text-a-r</code>(右对齐)、<code class="timor-text-red">.timor-text-a-j</code>(两端对齐)、<code class="timor-text-red">.timor-text-a-c</code>(居中对齐)</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-row">
+                            <div class="timor-span-sm-3 timor-line timor-text-a-l">.timor-text-a-l</div>
+                            <div class="timor-span-sm-3 timor-line timor-text-a-r">.timor-text-a-r</div>
+                            <div class="timor-span-sm-3 timor-line timor-text-a-j">.timor-text-a-j</div>
+                            <div class="timor-span-sm-3 timor-line timor-text-a-c">.timor-text-a-c</div>
+                        </div>
+                    </div>
+					<h3 id="grid" class="timor-line-bottom timor-font-weight">栅格系统</h3>
+                    <h5>简介</h5>
+					<h5>栅格系统最多12列，通过使用<code class="timor-text-red">.timor-row</code>定义外框，<code class="timor-text-red">.timor-span-*</code>将一行分为多列排列。</h5>
+                    <h5>可以使用<code class="timor-text-red">timor-span-sm-*</code>来减少内边距。</h5>
+					<div class="demo-fff-box timor-line timor-box timor-radius">
+						<span class="demo-example">实例</span>
+                        <div class="timor-row">
+                            <div class="timor-span-3 timor-line">timor-span-3</div>
+                            <div class="timor-span-9 timor-line">timor-span-9</div>
+                        </div>
+                        <div class="timor-row">
+                            <div class="timor-span-6 timor-line">timor-span-6</div>
+                            <div class="timor-span-6 timor-line">timor-span-6</div>
+                        </div>
+                        <div class="timor-row">
+                            <div class="timor-span-4 timor-line">timor-span-4</div>
+                            <div class="timor-span-4 timor-line">timor-span-4</div>
+                            <div class="timor-span-4 timor-line">timor-span-4</div>
+                        </div>
+                        <div class="timor-row">
+                            <div class="timor-span-sm-4 timor-line">timor-span-sm-4</div>
+                            <div class="timor-span-sm-4 timor-line">timor-span-sm-4</div>
+                            <div class="timor-span-sm-4 timor-line">timor-span-sm-4</div>
+                        </div>
+					</div>
+                    <h3 class="timor-line-bottom timor-font-weight" id="type">排版</h3>
+                    <h5 class="timor-font-weight">标题</h5>
+                    <h5>HTML 中的所有标题标签，<code class="timor-text-red">&lt;h1&gt;</code> 到 <code class="timor-text-red">&lt;h6&gt;</code> 均可使用。另外，还提供了 .h1 到 .h6 类，为的是给内联（inline）属性的文本赋予标题的样式。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <h1>h1. Timor heading<small>Timor span</small></h1>
+                        <h2>h1. Timor heading<small>Timor span</small></h2>
+                        <h3>h1. Timor heading<small>Timor span</small></h3>
+                        <h4>h1. Timor heading<small>Timor span</small></h4>
+                        <h5>h1. Timor heading<small>Timor span</small></h5>
+                        <h6>h1. Timor heading<small>Timor span</small></h6>
+                    </div>
+                    <h5>在标题内还可以包含 <code class="timor-text-red">&lt;small&gt;</code> 标签或赋予 <code class="timor-text-red">.timor-small</code> 类的元素，可以用来标记副标题。</h5>
+                    <h5 class="timor-font-weight">分割线</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <hr>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+                        <code class="timor-text-red">&lt;hr/&gt;</code>
+                    </div>
+                    <h5 class="timor-font-weight">段落</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+                        <code class="timor-text-red">&lt;p/&gt;...&lt;p/&gt;</code>
+                    </div>
+                    <h3 class="timor-line-bottom timor-font-weight" id="list">列表</h3>
+                    <h5 class="timor-font-weight">无序列表</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>Consectetur adipiscing elit</li>
+                                    <li>Integer molestie lorem at massa</li>
+                                </ul>
+                            </li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                        </ul>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                    </div>
+                    <h5 class="timor-font-weight">有序列表</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                        </ol>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;ol&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+                    </div>
+                    <h5 class="timor-font-weight">内联列表</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-list-horizontal">
+                            <li>Integer</li>
+                            <li>molestie</li>
+                            <li>lorem</li>
+                            <li>massa</li>
+                            <li>adipiscing</li>
+                        </ul>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;ul class='timor-list-horizontal'&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                    </div>
+                    <h5>无间距水平列表需要在UL里面包含<code class="timor-text-red">.timor-fl-lt</code>。</h5>
+                    <h5 class="timor-font-weight">描述列表</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <dl>
+                            <dt>Description lists</dt>
+                            <dd>A description list is perfect for defining terms.</dd>
+                            <dt>Euismod</dt>
+                            <dd>
+                                <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                                <p>Donec id elit non mi porta gravida at eget metus.</p>
+                            </dd>
+                            <dt>Malesuada porta</dt>
+                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                        </dl>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;dl&gt;
+    &lt;dt&gt;...&lt;/dt&gt;
+    &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+                    </div>
+                    <h5 class="timor-font-weight">水平描述列表</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <dl class="timor-dl-horizontal">
+                            <dt>Description lists</dt>
+                            <dd>A description list is perfect for defining terms.</dd>
+                            <dt>Euismod</dt>
+                            <dd>
+                                <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                                <p>Donec id elit non mi porta gravida at eget metus.</p>
+                            </dd>
+                            <dt>Malesuada porta</dt>
+                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                        </dl>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;dl class='timor-dl-horizontal'&gt;
+    &lt;dt&gt;...&lt;/dt&gt;
+    &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+                    </div>
+                    <h3 class="timor-font-weight" id="button">按钮</h3>
+                    <h5 class="timor-font-weight">默认样式</h5>
+                    <h5>使用下面列出的类可以快速创建一个带有预定义样式的按钮。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>
+                            <button class="timor-btn timor-btn-default timor-radius">Default</button>
+                            <button class="timor-btn timor-btn-primary">Primary</button>
+                            <button class="timor-btn timor-btn-success">Success</button>
+                            <button class="timor-btn timor-btn-info">Info</button>
+                            <button class="timor-btn timor-btn-warning">Warning</button>
+                            <button class="timor-btn timor-btn-danger">Danger</button>
+                            <button class="timor-btn timor-btn-link">link</button>
+                        </p>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;button class="timor-btn timor-btn-default"&gt;Default&lt;/button&gt;
+&lt;button class="timor-btn timor-btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="timor-btn timor-btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="timor-btn timor-btn-info"&gt;Info&lt;/button&gt;
+&lt;button class="timor-btn timor-btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="timor-btn timor-btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="timor-btn timor-btn-link"&gt;link&lt;/button&gt;
+</pre>
+                    </div>
+                    <h5 class="timor-font-weight">尺寸</h5>
+                    <h5>使用 <code class="timor-text-red">.timor-btn-lg</code>、<code class="timor-text-red">.timor-btn-sm</code> 或 <code class="timor-text-red">.timor-btn-xs</code> 可以获得不同尺寸的按钮。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>
+                            <button class="timor-btn timor-btn-primary timor-btn-lg timor-btn-active">timor-btn-lg</button>
+                            <button class="timor-btn timor-btn-primary">Primary</button>
+                            <button class="timor-btn timor-btn-primary timor-btn-sm">timor-btn-sm</button>
+                            <button class="timor-btn timor-btn-primary timor-btn-xm">timor-btn-xm</button></p>
+                    </div>
+                    <h5>通过给按钮添加 <code class="timor-text-red">.timor-btn-active</code> 类可以将其表示为激活状态。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>
+                            <button class="timor-btn timor-btn-primary timor-btn-active">Primary</button>
+                            <button class="timor-btn timor-btn-success timor-btn-active">Success</button>
+                            <button class="timor-btn timor-btn-info timor-btn-active">Info</button>
+                            <button class="timor-btn timor-btn-danger timor-btn-active">Danger</button></p>
+                    </div>
+                    <h5>通过给按钮添加 <code class="timor-text-red">.timor-btn-disable</code> 类可以将其表示为不可点击状态。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>
+                            <button class="timor-btn timor-btn-disable">Disable</button>
+                    </div>
+                    <h5>通过给按钮添加 <code class="timor-text-red">.timor-block</code> 类可以将其拉伸至父元素100%的宽度，而且按钮也变为了块级（block）元素。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>
+                            <button class="timor-btn timor-btn-default timor-block">Default</button>
+                            <button class="timor-btn timor-btn-default timor-btn-active timor-block">Default</button>
+                        </p>
+                    </div>
+                    <h5 class="timor-font-weight">按钮组</h5>
+                    <h5>通过给按钮外层添加<code>.timor-btn-group</code>来创建按钮组</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p class="timor-btn-group timor-text-a-c">
+                            <button class="timor-btn timor-btn-primary timor-radius-lg">Primary</button><button class="timor-btn timor-btn-info timor-radius timor-radius">Info</button><button class="timor-btn timor-btn-danger timor-radius timor-radius">Danger</button><button class="timor-btn timor-btn-success timor-radius-lg">Success</button>
+                        </p>
+                        <p class="timor-btn-group timor-text-a-c">
+                            <button class="timor-btn timor-btn-primary timor-radius-lg timor-btn-active">Primary</button><button class="timor-btn timor-btn-info timor-radius timor-radius timor-btn-active">Info</button><button class="timor-btn timor-btn-danger timor-radius timor-radius timor-btn-active">Danger</button><button class="timor-btn timor-btn-success timor-radius-lg timor-btn-active">Success</button>
+                        </p>
+                    </div>
+                    <h5 class="timor-font-weight">按钮Icon</h5>
+                    <h5>在按钮前面添加按钮类可以使按钮变成各式各样的按钮,具体图标样式请参考图标。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p>
+                            <button class="timor-btn timor-btn-primary"><i class="timor-icon timor-icon-power-off timor-icon-sm"></i> Power</button>
+                            <button class="timor-btn timor-btn-success"><i class="timor-icon timor-icon-search timor-icon-sm"></i> Search</button>
+                            <button class="timor-btn timor-btn-info"><i class="timor-icon timor-icon-check timor-icon-sm"></i></button>
+                            <button class="timor-btn timor-btn-danger"><i class="timor-icon timor-icon-close timor-icon-sm"></i></button>
+                            <button class="timor-btn timor-btn-success timor-btn-sm"><i class="timor-icon timor-icon-search timor-icon-sm"></i></button>
+                            <button class="timor-btn timor-btn-danger timor-btn-xm"><i class="timor-icon timor-icon-close timor-icon-sm"></i></button>
+                        </p>
+                        <p class="timor-btn-group">
+                            <button class="timor-btn timor-btn-primary timor-radius-lg timor-btn-active">Primary</button><button class="timor-btn timor-btn-info timor-radius timor-radius timor-btn-active">Info</button><button class="timor-btn timor-btn-danger timor-radius timor-radius timor-btn-active">Danger</button><button class="timor-btn timor-btn-success timor-radius-lg timor-btn-active">Success</button>
+                        </p>
+                    </div>
+                    <h3 class="timor-font-weight" id="icon">图标</h3>
+                    <h5>Timor采用了fontawesome的图标字库，全套图标来源于fontawesome。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-row">
+                            <div class="timor-span-6">
+                                <p><i class="timor-icon timor-icon-book"></i><code>.timor-icon-book</code></p>
+                                <p><i class="timor-icon-music timor-icon"></i><code>.timor-icon-book</code></p>
+                                <p><i class="timor-icon-search timor-icon"></i><code>.timor-icon-book</code></p>
+                                <p><i class="timor-icon-envelope-o timor-icon"></i><code>.timor-icon-book</code></p>
+                                <p><i class="timor-icon timor-icon-check"></i><code>.timor-icon-check</code></p>
+                                <p><i class="timor-icon-remove timor-icon"></i><code>.timor-icon-remove</code></p>
+                                <p><i class="timor-icon-close timor-icon"></i><code>.timor-icon-close</code></p>
+                                <p><i class="timor-icon-times timor-icon"></i><code>.timor-icon-times</code></p>
+                                <p><i class="timor-icon timor-icon-search-plus"></i><code>.timor-icon-search-plus</code></p>
+                                <p><i class="timor-icon-search-minus timor-icon"></i><code>.timor-icon-search-minus</code></p>
+                                <p><i class="timor-icon-power-off timor-icon"></i><code>.timor-icon-power-off</code></p>
+                                <p><i class="timor-icon-signal timor-icon"></i><code>.timor-icon-signal</code></p>
+                                <p><i class="timor-icon timor-icon-gear"></i><code>.timor-icon-gear</code></p>
+                                <p><i class="timor-icon-cog timor-icon"></i><code>.timor-icon-cog</code></p>
+                                <p><i class="timor-icon-trash-o timor-icon"></i><code>.timor-icon-trash-o</code></p>
+                                <p><i class="timor-icon-home timor-icon"></i><code>.timor-icon-home</code></p>
+                                <p><i class="timor-icon-file-o timor-icon"></i><code>.timor-icon-file-o</code></p>
+                                <p><i class="timor-icon-clock-o timor-icon"></i><code>.timor-icon-clock-o</code></p>
+                                <p><i class="timor-icon-road timor-icon"></i><code>.timor-icon-road</code></p>
+                                <p><i class="timor-icon-download timor-icon"></i><code>.timor-icon-download</code></p>
+                                <p><i class="timor-icon-arrow-circle-o-down timor-icon"></i><code>.timor-icon-arrow-circle-o-down</code></p>
+                                <p><i class="timor-icon-arrow-circle-o-up timor-icon"></i><code>.timor-icon-arrow-circle-o-up</code></p>
+                                <p><i class="timor-icon-inbox timor-icon"></i><code>.timor-icon-inbox</code></p>
+                                <p><i class="timor-icon-play-circle-o timor-icon"></i><code>.timor-icon-play-circle-o</code></p>
+                                <p><i class="timor-icon-rotate-right timor-icon"></i><code>.timor-icon-rotate-right</code></p>
+                                <p><i class="timor-icon-repeat timor-icon"></i><code>.timor-icon-repeat</code></p>
+                                <p><i class="timor-icon-refresh timor-icon"></i><code>.timor-icon-refresh</code></p>
+                                <p><i class="timor-icon-list-alt timor-icon"></i><code>.timor-icon-list-alt</code></p>
+                                <p><i class="timor-icon-lock timor-icon"></i><code>.timor-icon-lock</code></p>
+                                <p><i class="timor-icon-flag timor-icon"></i><code>.timor-icon-flag</code></p>
+                                <p><i class="timor-icon-headphones timor-icon"></i><code>.timor-icon-headphones</code></p>
+                                <p><i class="timor-icon-volume-off timor-icon"></i><code>.timor-icon-volume-off</code></p>
+                                <p><i class="timor-icon-volume-down timor-icon"></i><code>.timor-icon-volume-down</code></p>
+                                <p><i class="timor-icon-volume-up timor-icon"></i><code>.timor-icon-volume-up</code></p>
+                                <p><i class="timor-icon-qrcode timor-icon"></i><code>.timor-icon-qrcode</code></p>
+                                <p><i class="timor-icon-barcode timor-icon"></i><code>.timor-icon-barcode</code></p>
+                                <p><i class="timor-icon-tag timor-icon"></i><code>.timor-icon-tag</code></p>
+                                <p><i class="timor-icon-tags timor-icon"></i><code>.timor-icon-tags</code></p>
+                                <p><i class="timor-icon-bookmark timor-icon"></i><code>.timor-icon-bookmark</code></p>
+                                <p><i class="timor-icon-book timor-icon"></i><code>.timor-icon-book</code></p>
+                                <p><i class="timor-icon-print timor-icon"></i><code>.timor-icon-print</code></p>
+                                <p><i class="timor-icon-camera timor-icon"></i><code>.timor-icon-camera</code></p>
+                                <p><i class="timor-icon-font timor-icon"></i><code>.timor-icon-font</code></p>
+                                <p><i class="timor-icon-bold timor-icon"></i><code>.timor-icon-bold</code></p>
+                                <p><i class="timor-icon-italic timor-icon"></i><code>.timor-icon-italic</code></p>
+                                <p><i class="timor-icon-text-height timor-icon"></i><code>.timor-icon-text-height</code></p>
+                                <p><i class="timor-icon-text-width timor-icon"></i><code>.timor-icon-text-width</code></p>
+                                <p><i class="timor-icon-align-left timor-icon"></i><code>.timor-icon-align-left</code></p>
+                                <p><i class="timor-icon-align-center timor-icon"></i><code>.timor-icon-align-center</code></p>
+                                <p><i class="timor-icon-align-right timor-icon"></i><code>.timor-icon-align-right</code></p>
+                                <p><i class="timor-icon-align-justify timor-icon"></i><code>.timor-icon-align-justify</code></p>
+                                <p><i class="timor-icon-list timor-icon"></i><code>.timor-icon-list</code></p>
+                                <p><i class="timor-icon-dedent timor-icon"></i><code>.timor-icon-dedent</code></p>
+                                <p><i class="timor-icon-outdent timor-icon"></i><code>.timor-icon-outdent</code></p>
+                                <p><i class="timor-icon-indent timor-icon"></i><code>.timor-icon-indent</code></p>
+                                <p><i class="timor-icon-video-camera timor-icon"></i><code>.timor-icon-video-camera</code></p>
+                                <p><i class="timor-icon-photo timor-icon"></i><code>.timor-icon-photo</code></p>
+                                <p><i class="timor-icon-image timor-icon"></i><code>.timor-icon-image</code></p>
+                                <p><i class="timor-icon-picture-o timor-icon"></i><code>.timor-icon-picture-o</code></p>
+                                <p><i class="timor-icon-pencil timor-icon"></i><code>.timor-icon-pencil</code></p>
+                                <p><i class="timor-icon-map-marker timor-icon"></i><code>.timor-icon-map-marker</code></p>
+                                <p><i class="timor-icon-adjust timor-icon"></i><code>.timor-icon-adjust</code></p>
+                                <p><i class="timor-icon-tint timor-icon"></i><code>.timor-icon-tint</code></p>
+                                <p><i class="timor-icon-edit timor-icon"></i><code>.timor-icon-edit</code></p>
+                                <p><i class="timor-icon-pencil-square-o timor-icon"></i><code>.timor-icon-pencil-square-o</code></p>
+                                <p><i class="timor-icon-share-square-o timor-icon"></i><code>.timor-icon-share-square-o</code></p>
+                                <p><i class="timor-icon-check-square-o timor-icon"></i><code>.timor-icon-check-square-o</code></p>
+                                <p><i class="timor-icon-arrows timor-icon"></i><code>.timor-icon-arrows</code></p>
+                                <p><i class="timor-icon-step-backward timor-icon"></i><code>.timor-icon-step-backward</code></p>
+                                <p><i class="timor-icon-fast-backward timor-icon"></i><code>.timor-icon-fast-backward</code></p>
+                                <p><i class="timor-icon-backward timor-icon"></i><code>.timor-icon-backward</code></p>
+                                <p><i class="timor-icon-play timor-icon"></i><code>.timor-icon-play</code></p>
+                                <p><i class="timor-icon-pause timor-icon"></i><code>.timor-icon-pause</code></p>
+                                <p><i class="timor-icon-stop timor-icon"></i><code>.timor-icon-stop</code></p>
+                                <p><i class="timor-icon-forward timor-icon"></i><code>.timor-icon-forward</code></p>
+                                <p><i class="timor-icon-fast-forward timor-icon"></i><code>.timor-icon-fast-forward</code></p>
+                                <p><i class="timor-icon-step-forward timor-icon"></i><code>.timor-icon-step-forward</code></p>
+                                <p><i class="timor-icon-eject timor-icon"></i><code>.timor-icon-eject</code></p>
+                                <p><i class="timor-icon-chevron-left timor-icon"></i><code>.timor-icon-chevron-left</code></p>
+                                <p><i class="timor-icon-chevron-right timor-icon"></i><code>.timor-icon-chevron-right</code></p>
+                                <p><i class="timor-icon-plus-circle timor-icon"></i><code>.timor-icon-plus-circle</code></p>
+                                <p><i class="timor-icon-minus-circle timor-icon"></i><code>.timor-icon-minus-circle</code></p>
+                                <p><i class="timor-icon-times-circle timor-icon"></i><code>.timor-icon-times-circle</code></p>
+                                <p><i class="timor-icon-check-circle timor-icon"></i><code>.timor-icon-check-circle</code></p>
+                                <p><i class="timor-icon-question-circle timor-icon"></i><code>.timor-icon-question-circle</code></p>
+                                <p><i class="timor-icon-info-circle timor-icon"></i><code>.timor-icon-info-circle</code></p>
+                                <p><i class="timor-icon-crosshairs timor-icon"></i><code>.timor-icon-crosshairs</code></p>
+                                <p><i class="timor-icon-times-circle-o timor-icon"></i><code>.timor-icon-times-circle-o</code></p>
+                                <p><i class="timor-icon-check-circle-o timor-icon"></i><code>.timor-icon-check-circle-o</code></p>
+                                <p><i class="timor-icon-ban timor-icon"></i><code>.timor-icon-ban</code></p>
+                                <p><i class="timor-icon-arrow-left timor-icon"></i><code>.timor-icon-arrow-left</code></p>
+                                <p><i class="timor-icon-arrow-right timor-icon"></i><code>.timor-icon-arrow-right</code></p>
+                                <p><i class="timor-icon-arrow-up timor-icon"></i><code>.timor-icon-arrow-up</code></p>
+                                <p><i class="timor-icon-arrow-down timor-icon"></i><code>.timor-icon-arrow-down</code></p>
+                                <p><i class="timor-icon-mail-forward timor-icon"></i><code>.timor-icon-mail-forward</code></p>
+                                <p><i class="timor-icon-share timor-icon"></i><code>.timor-icon-share</code></p>
+                                <p><i class="timor-icon-expand timor-icon"></i><code>.timor-icon-expand</code></p>
+                                <p><i class="timor-icon-compress timor-icon"></i><code>.timor-icon-compress</code></p>
+                                <p><i class="timor-icon-plus timor-icon"></i><code>.timor-icon-plus</code></p>
+                                <p><i class="timor-icon-minus timor-icon"></i><code>.timor-icon-minus</code></p>
+                                <p><i class="timor-icon-asterisk timor-icon"></i><code>.timor-icon-asterisk</code></p>
+                                <p><i class="timor-icon-exclamation-circle timor-icon"></i><code>.timor-icon-exclamation-circle</code></p>
+                                <p><i class="timor-icon-gift timor-icon"></i><code>.timor-icon-gift</code></p>
+                                <p><i class="timor-icon-leaf timor-icon"></i><code>.timor-icon-leaf</code></p>
+                                <p><i class="timor-icon-fire timor-icon"></i><code>.timor-icon-fire</code></p>
+                                <p><i class="timor-icon-eye timor-icon"></i><code>.timor-icon-eye</code></p>
+                                <p><i class="timor-icon-eye-slash timor-icon"></i><code>.timor-icon-eye-slash</code></p>
+                                <p><i class="timor-icon-warning timor-icon"></i><code>.timor-icon-warning</code></p>
+                                <p><i class="timor-icon-exclamation-triangle timor-icon"></i><code>.timor-icon-exclamation-triangle</code></p>
+                                <p><i class="timor-icon-plane timor-icon"></i><code>.timor-icon-plane</code></p>
+                                <p><i class="timor-icon-calendar timor-icon"></i><code>.timor-icon-calendar</code></p>
+                                <p><i class="timor-icon-random timor-icon"></i><code>.timor-icon-random</code></p>
+                                <p><i class="timor-icon-comment timor-icon"></i><code>.timor-icon-comment</code></p>
+                                <p><i class="timor-icon-magnet timor-icon"></i><code>.timor-icon-magnet</code></p>
+                                <p><i class="timor-icon-chevron-up timor-icon"></i><code>.timor-icon-chevron-up</code></p>
+                                <p><i class="timor-icon-chevron-down timor-icon"></i><code>.timor-icon-chevron-down</code></p>
+                                <p><i class="timor-icon-retweet timor-icon"></i><code>.timor-icon-retweet</code></p>
+                                <p><i class="timor-icon-shopping-cart timor-icon"></i><code>.timor-icon-shopping-cart</code></p>
+                                <p><i class="timor-icon-folder timor-icon"></i><code>.timor-icon-folder</code></p>
+                                <p><i class="timor-icon-arrows-v timor-icon"></i><code>.timor-icon-arrows-v</code></p>
+                                <p><i class="timor-icon-arrows-h timor-icon"></i><code>.timor-icon-arrows-h</code></p>
+                                <p><i class="timor-icon-bar-chart-o timor-icon"></i><code>.timor-icon-bar-chart-o</code></p>
+                                <p><i class="timor-icon-bar-chart timor-icon"></i><code>.timor-icon-bar-chart</code></p>
+                                <p><i class="timor-icon-twitter-square timor-icon"></i><code>.timor-icon-twitter-square</code></p>
+                                <p><i class="timor-icon-facebook-square timor-icon"></i><code>.timor-icon-facebook-square</code></p>
+                                <p><i class="timor-icon-camera-retro timor-icon"></i><code>.timor-icon-camera-retro</code></p>
+                                <p><i class="timor-icon-key timor-icon"></i><code>.timor-icon-key</code></p>
+                                <p><i class="timor-icon-gears timor-icon"></i><code>.timor-icon-gears</code></p>
+                                <p><i class="timor-icon-cogs timor-icon"></i><code>.timor-icon-cogs</code></p>
+                                <p><i class="timor-icon-comments timor-icon"></i><code>.timor-icon-comments</code></p>
+                                <p><i class="timor-icon-thumbs-o-up timor-icon"></i><code>.timor-icon-thumbs-o-up</code></p>
+                                <p><i class="timor-icon-thumbs-o-down timor-icon"></i><code>.timor-icon-thumbs-o-down</code></p>
+                                <p><i class="timor-icon-star-half timor-icon"></i><code>.timor-icon-star-half</code></p>
+                                <p><i class="timor-icon-heart-o timor-icon"></i><code>.timor-icon-heart-o</code></p>
+                                <p><i class="timor-icon-sign-out timor-icon"></i><code>.timor-icon-sign-out</code></p>
+                                <p><i class="timor-icon-linkedin-square timor-icon"></i><code>.timor-icon-linkedin-square</code></p>
+                                <p><i class="timor-icon-thumb-tack timor-icon"></i><code>.timor-icon-thumb-tack</code></p>
+                                <p><i class="timor-icon-external-link timor-icon"></i><code>.timor-icon-external-link</code></p>
+                                <p><i class="timor-icon-sign-in timor-icon"></i><code>.timor-icon-sign-in</code></p>
+                                <p><i class="timor-icon-trophy timor-icon"></i><code>.timor-icon-trophy</code></p>
+                                <p><i class="timor-icon-github-square timor-icon"></i><code>.timor-icon-github-square</code></p>
+                                <p><i class="timor-icon-upload timor-icon"></i><code>.timor-icon-upload</code></p>
+                                <p><i class="timor-icon-lemon-o timor-icon"></i><code>.timor-icon-lemon-o</code></p>
+                                <p><i class="timor-icon-phone timor-icon"></i><code>.timor-icon-phone</code></p>
+                                <p><i class="timor-icon-square-o timor-icon"></i><code>.timor-icon-square-o</code></p>
+                                <p><i class="timor-icon-bookmark-o timor-icon"></i><code>.timor-icon-bookmark-o</code></p>
+                                <p><i class="timor-icon-phone-square timor-icon"></i><code>.timor-icon-phone-square</code></p>
+                                <p><i class="timor-icon-twitter timor-icon"></i><code>.timor-icon-twitter</code></p>
+                                <p><i class="timor-icon-facebook timor-icon"></i><code>.timor-icon-facebook</code></p>
+                                <p><i class="timor-icon-github timor-icon"></i><code>.timor-icon-github</code></p>
+                                <p><i class="timor-icon-unlock timor-icon"></i><code>.timor-icon-unlock</code></p>
+                                <p><i class="timor-icon-credit-card timor-icon"></i><code>.timor-icon-credit-card</code></p>
+                                <p><i class="timor-icon-rss timor-icon"></i><code>.timor-icon-rss</code></p>
+                                <p><i class="timor-icon-hdd-o timor-icon"></i><code>.timor-icon-hdd-o</code></p>
+                                <p><i class="timor-icon-bullhorn timor-icon"></i><code>.timor-icon-bullhorn</code></p>
+                                <p><i class="timor-icon-bell timor-icon"></i><code>.timor-icon-bell</code></p>
+                                <p><i class="timor-icon-certificate timor-icon"></i><code>.timor-icon-certificate</code></p>
+                                <p><i class="timor-icon-hand-o-right timor-icon"></i><code>.timor-icon-hand-o-right</code></p>
+                                <p><i class="timor-icon-cc timor-icon"></i><code>.timor-icon-cc</code></p>
+                                <p><i class="timor-icon-shekel timor-icon"></i><code>.timor-icon-shekel</code></p>
+                                <p><i class="timor-icon-sheqel timor-icon"></i><code>.timor-icon-sheqel</code></p>
+                                <p><i class="timor-icon-ils timor-icon"></i><code>.timor-icon-angellist</code></p>
+                                <p><i class="timor-icon-meanpath timor-icon"></i><code>.timor-icon-angellist</code></p>
+                                <p><i class="timor-icon-hand-o-left timor-icon"></i><code>.timor-icon-hand-o-left</code></p>
+                                <p><i class="timor-icon-hand-o-up timor-icon"></i><code>.timor-icon-hand-o-up</code></p>
+                                <p><i class="timor-icon-hand-o-down timor-icon"></i><code>.timor-icon-hand-o-down</code></p>
+                                <p><i class="timor-icon-arrow-circle-left timor-icon"></i><code>.timor-icon-arrow-circle-left</code></p>
+                                <p><i class="timor-icon timor-icon-arrow-circle-right"></i><code>.timor-icon-arrow-circle-right</code></p>
+                                <p><i class="timor-icon-arrow-circle-up timor-icon"></i><code>.timor-icon-arrow-circle-up</code></p>
+                                <p><i class="timor-icon-arrow-circle-down timor-icon"></i><code>.timor-icon-arrow-circle-down</code></p>
+                                <p><i class="timor-icon-globe timor-icon"></i><code>.timor-icon-globe</code></p>
+                                <p><i class="timor-icon timor-icon-wrench"></i><code>.timor-icon-wrench</code></p>
+                                <p><i class="timor-icon-tasks timor-icon"></i><code>.timor-icon-tasks</code></p>
+                                <p><i class="timor-icon-filter timor-icon"></i><code>.timor-icon-filter</code></p>
+                                <p><i class="timor-icon-briefcase timor-icon"></i><code>.timor-icon-briefcase</code></p>
+                                <p><i class="timor-icon-arrows-alt timor-icon"></i><code>.timor-icon-arrows-alt</code></p>
+                                <p><i class="timor-icon-group timor-icon"></i><code>.timor-icon-group</code></p>
+                                <p><i class="timor-icon-users timor-icon"></i><code>.timor-icon-users</code></p>
+                                <p><i class="timor-icon-chain timor-icon"></i><code>.timor-icon-chain</code></p>
+                                <p><i class="timor-icon-link timor-icon"></i><code>.timor-icon-link</code></p>
+                                <p><i class="timor-icon-cloud timor-icon"></i><code>.timor-icon-cloud</code></p>
+                                <p><i class="timor-icon-flask timor-icon"></i><code>.timor-icon-flask</code></p>
+                                <p><i class="timor-icon-cut timor-icon"></i><code>.timor-icon-cut</code></p>
+                                <p><i class="timor-icon-scissors timor-icon"></i><code>.timor-icon-scissors</code></p>
+                                <p><i class="timor-icon-copy timor-icon"></i><code>.timor-icon-copy</code></p>
+                                <p><i class="timor-icon-files-o timor-icon"></i><code>.timor-icon-files-o</code></p>
+                                <p><i class="timor-icon-paperclip timor-icon"></i><code>.timor-icon-paperclip</code></p>
+                                <p><i class="timor-icon-save timor-icon"></i><code>.timor-icon-save</code></p>
+                                <p><i class="timor-icon-floppy-o timor-icon"></i><code>.timor-icon-floppy-o</code></p>
+                                <p><i class="timor-icon-square timor-icon"></i><code>.timor-icon-square</code></p>
+                                <p><i class="timor-icon-navicon timor-icon"></i><code>.timor-icon-navicon</code></p>
+                                <p><i class="timor-icon-reorder timor-icon"></i><code>.timor-icon-reorder</code></p>
+                                <p><i class="timor-icon-bars timor-icon"></i><code>.timor-icon-bars</code></p>
+                                <p><i class="timor-icon-list-ul timor-icon"></i><code>.timor-icon-list-ul</code></p>
+                                <p><i class="timor-icon-list-ol timor-icon"></i><code>.timor-icon-list-ol</code></p>
+                                <p><i class="timor-icon-strikethrough timor-icon"></i><code>.timor-icon-strikethrough</code></p>
+                                <p><i class="timor-icon-underline timor-icon"></i><code>.timor-icon-underline</code></p>
+                                <p><i class="timor-icon-table timor-icon"></i><code>.timor-icon-table</code></p>
+                                <p><i class="timor-icon-magic timor-icon"></i><code>.timor-icon-magic</code></p>
+                                <p><i class="timor-icon-truck timor-icon"></i><code>.timor-icon-truck</code></p>
+                                <p><i class="timor-icon-pinterest timor-icon"></i><code>.timor-icon-pinterest</code></p>
+                                <p><i class="timor-icon-pinterest-square timor-icon"></i><code>.timor-icon-pinterest-square</code></p>
+                                <p><i class="timor-icon-google-plus-square timor-icon"></i><code>.timor-icon-google-plus-square</code></p>
+                                <p><i class="timor-icon-google-plus timor-icon"></i><code>.timor-icon-google-plus</code></p>
+                                <p><i class="timor-icon-money timor-icon"></i><code>.timor-icon-money</code></p>
+                                <p><i class="timor-icon-caret-down timor-icon"></i><code>.timor-icon-caret-down</code></p>
+                                <p><i class="timor-icon-caret-up timor-icon"></i><code>.timor-icon-caret-up</code></p>
+                                <p><i class="timor-icon-caret-left timor-icon"></i><code>.timor-icon-caret-left</code></p>
+                                <p><i class="timor-icon-caret-right timor-icon"></i><code>.timor-icon-caret-right</code></p>
+                                <p><i class="timor-icon-columns timor-icon"></i><code>.timor-icon-columns</code></p>
+                                <p><i class="timor-icon-unsorted timor-icon"></i><code>.timor-icon-unsorted</code></p>
+                                <p><i class="timor-icon-sort timor-icon"></i><code>.timor-icon-sort</code></p>
+                                <p><i class="timor-icon-sort-down timor-icon"></i><code>.timor-icon-sort-down</code></p>
+                                <p><i class="timor-icon-sort-desc timor-icon"></i><code>.timor-icon-sort-desc</code></p>
+                                <p><i class="timor-icon-sort-up timor-icon"></i><code>.timor-icon-sort-up</code></p>
+                                <p><i class="timor-icon-sort-asc timor-icon"></i><code>.timor-icon-sort-asc</code></p>
+                                <p><i class="timor-icon-envelope timor-icon"></i><code>.timor-icon-envelope</code></p>
+                                <p><i class="timor-icon-linkedin timor-icon"></i><code>.timor-icon-linkedin</code></p>
+                                <p><i class="timor-icon-rotate timor-icon"></i><code>.timor-icon-rotate</code></p>
+                                <p><i class="timor-icon-undo timor-icon"></i><code>.timor-icon-undo</code></p>
+                                <p><i class="timor-icon-legal timor-icon"></i><code>.timor-icon-legal</code></p>
+                                <p><i class="timor-icon-gavel timor-icon"></i><code>.timor-icon-gavel</code></p>
+                                <p><i class="timor-icon-dashboard timor-icon"></i><code>.timor-icon-dashboard</code></p>
+                                <p><i class="timor-icon-tachometer timor-icon"></i><code>.timor-icon-tachometer</code></p>
+                                <p><i class="timor-icon-comment-o timor-icon"></i><code>.timor-icon-comment-o</code></p>
+                                <p><i class="timor-icon-comments-o timor-icon"></i><code>.timor-icon-comments-o</code></p>
+                                <p><i class="timor-icon-flash timor-icon"></i><code>.timor-icon-flash</code></p>
+                                <p><i class="timor-icon-bolt timor-icon"></i><code>.timor-icon-bolt</code></p>
+                                <p><i class="timor-icon-sitemap timor-icon"></i><code>.timor-icon-sitemap</code></p>
+                                <p><i class="timor-icon-umbrella timor-icon"></i><code>.timor-icon-paste</code></p>
+                                <p><i class="timor-icon-clipboard timor-icon"></i><code>.timor-icon-clipboard</code></p>
+                                <p><i class="timor-icon-lightbulb-o timor-icon"></i><code>.timor-icon-lightbulb-o</code></p>
+                                <p><i class="timor-icon-exchange timor-icon"></i><code>.timor-icon-exchange</code></p>
+                                <p><i class="timor-icon-cloud-download timor-icon"></i><code>.timor-icon-cloud-download</code></p>
+                                <p><i class="timor-icon-cloud-upload timor-icon"></i><code>.timor-icon-cloud-upload</code></p>
+                                <p><i class="timor-icon-user-md timor-icon"></i><code>.timor-icon-user-md</code></p>
+                                <p><i class="timor-icon-stethoscope timor-icon"></i><code>.timor-icon-stethoscope</code></p>
+                                <p><i class="timor-icon-suitcase timor-icon"></i><code>.timor-icon-suitcase</code></p>
+                                <p><i class="timor-icon-bell-o timor-icon"></i><code>.timor-icon-bell-o</code></p>
+                                <p><i class="timor-icon-coffee timor-icon"></i><code>.timor-icon-coffee</code></p>
+                                <p><i class="timor-icon-cutlery timor-icon"></i><code>.timor-icon-cutlery</code></p>
+                                <p><i class="timor-icon-file-text-o timor-icon"></i><code>.timor-icon-file-text-o</code></p>
+                                <p><i class="timor-icon-building-o timor-icon"></i><code>.timor-icon-building-o</code></p>
+                                <p><i class="timor-icon-hospital-o timor-icon"></i><code>.timor-icon-hospital-o</code></p>
+                                <p><i class="timor-icon-ambulance timor-icon"></i><code>.timor-icon-ambulance</code></p>
+                                <p><i class="timor-icon-medkit timor-icon"></i><code>.timor-icon-medkit</code></p>
+                                <p><i class="timor-icon-fighter-jet timor-icon"></i><code>.timor-icon-fighter-jet</code></p>
+                                <p><i class="timor-icon-beer timor-icon"></i><code>.timor-icon-beer</code></p>
+                                <p><i class="timor-icon-h-square timor-icon"></i><code>.timor-icon-h-square</code></p>
+                                <p><i class="timor-icon-plus-square timor-icon"></i><code>.timor-icon-plus-square</code></p>
+                                <p><i class="timor-icon-angle-double-left timor-icon"></i><code>.timor-icon-angle-double-left</code></p>
+                                <p><i class="timor-icon-angle-double-right timor-icon"></i><code>.timor-icon-angle-double-right</code></p>
+                                <p><i class="timor-icon-angle-double-up timor-icon"></i><code>.timor-icon-angle-double-up</code></p>
+                                <p><i class="timor-icon-angle-double-down timor-icon"></i><code>.timor-icon-angle-double-down</code></p>
+                                <p><i class="timor-icon-angle-left timor-icon"></i><code>.timor-icon-angle-left</code></p>
+                                <p><i class="timor-icon-angle-right timor-icon"></i><code>.timor-icon-angle-right</code></p>
+                                <p><i class="timor-icon-angle-up timor-icon"></i><code>.timor-icon-angle-up</code></p>
+                                <p><i class="timor-icon-angle-down timor-icon"></i><code>.timor-icon-angle-down</code></p>
+                                <p><i class="timor-icon-desktop timor-icon"></i><code>.timor-icon-desktop</code></p>
+                                <p><i class="timor-icon-laptop timor-icon"></i><code>.timor-icon-laptop</code></p>
+                                <p><i class="timor-icon-tablet timor-icon"></i><code>.timor-icon-tablet</code></p>
+                                <p><i class="timor-icon-mobile-phone timor-icon"></i><code>.timor-icon-mobile-phone</code></p>
+                                <p><i class="timor-icon-mobile timor-icon"></i><code>.timor-icon-mobile</code></p>
+                                <p><i class="timor-icon-circle-o timor-icon"></i><code>.timor-icon-circle-o</code></p>
+                                <p><i class="timor-icon-quote-left timor-icon"></i><code>.timor-icon-quote-left</code></p>
+                                <p><i class="timor-icon-quote-right timor-icon"></i><code>.timor-icon-quote-right</code></p>
+                                <p><i class="timor-icon-spinner timor-icon"></i><code>.timor-icon-spinner</code></p>
+                                <p><i class="timor-icon-circle timor-icon"></i><code>.timor-icon-circle</code></p>
+                                <p><i class="timor-icon-mail-reply timor-icon"></i><code>.timor-icon-mail-reply</code></p>
+                                <p><i class="timor-icon-reply timor-icon"></i><code>.timor-icon-reply</code></p>
+                            </div>
+                            <div class="timor-span-6">
+                                <p><i class="timor-icon-github-alt timor-icon"></i><code>.timor-icon-github-alt</code></p>
+                                <p><i class="timor-icon-folder-o timor-icon"></i><code>.timor-icon-folder-o</code></p>
+                                <p><i class="timor-icon-folder-open-o timor-icon"></i><code>.timor-icon-folder-open-o</code></p>
+                                <p><i class="timor-icon-smile-o timor-icon"></i><code>.timor-icon-smile-o</code></p>
+                                <p><i class="timor-icon-frown-o timor-icon"></i><code>.timor-icon-frown-o</code></p>
+                                <p><i class="timor-icon-meh-o timor-icon"></i><code>.timor-icon-meh-o</code></p>
+                                <p><i class="timor-icon-gamepad timor-icon"></i><code>.timor-icon-gamepad</code></p>
+                                <p><i class="timor-icon-keyboard-o timor-icon"></i><code>.timor-icon-keyboard-o</code></p>
+                                <p><i class="timor-icon-flag-o timor-icon"></i><code>.timor-icon-flag-o</code></p>
+                                <p><i class="timor-icon-flag-checkered timor-icon"></i><code>.timor-icon-flag-checkered</code></p>
+                                <p><i class="timor-icon-terminal timor-icon"></i><code>.timor-icon-terminal</code></p>
+                                <p><i class="timor-icon-code timor-icon"></i><code>.timor-icon-code</code></p>
+                                <p><i class="timor-icon-mail-reply-all timor-icon"></i><code>.timor-icon-mail-reply-all</code></p>
+                                <p><i class="timor-icon-reply-all timor-icon"></i><code>.timor-icon-reply-all</code></p>
+                                <p><i class="timor-icon-star-half-empty timor-icon"></i><code>.timor-icon-star-half-empty</code></p>
+                                <p><i class="timor-icon-star-half-full timor-icon"></i><code>.timor-icon-star-half-full</code></p>
+                                <p><i class="timor-icon-star-half-o timor-icon"></i><code>.timor-icon-star-half-o</code></p>
+                                <p><i class="timor-icon-location-arrow timor-icon"></i><code>.timor-icon-location-arrow</code></p>
+                                <p><i class="timor-icon-crop timor-icon"></i><code>.timor-icon-crop</code></p>
+                                <p><i class="timor-icon-code-fork timor-icon"></i><code>.timor-icon-code-fork</code></p>
+                                <p><i class="timor-icon-unlink timor-icon"></i><code>.timor-icon-unlink</code></p>
+                                <p><i class="timor-icon-chain-broken timor-icon"></i><code>.timor-icon-chain-broken</code></p>
+                                <p><i class="timor-icon-question timor-icon"></i><code>.timor-icon-question</code></p>
+                                <p><i class="timor-icon-info timor-icon"></i><code>.timor-icon-info</code></p>
+                                <p><i class="timor-icon-exclamation timor-icon"></i><code>.timor-icon-exclamation</code></p>
+                                <p><i class="timor-icon-superscript timor-icon"></i><code>.timor-icon-superscript</code></p>
+                                <p><i class="timor-icon-subscript timor-icon"></i><code>.timor-icon-subscript</code></p>
+                                <p><i class="timor-icon-eraser timor-icon"></i><code>.timor-icon-eraser</code></p>
+                                <p><i class="timor-icon-puzzle-piece timor-icon"></i><code>.timor-icon-puzzle-piece</code></p>
+                                <p><i class="timor-icon-microphone timor-icon"></i><code>.timor-icon-microphone</code></p>
+                                <p><i class="timor-icon-microphone-slash timor-icon"></i><code>.timor-icon-microphone-slash</code></p>
+                                <p><i class="timor-icon-shield timor-icon"></i><code>.timor-icon-shield</code></p>
+                                <p><i class="timor-icon-calendar-o timor-icon"></i><code>.timor-icon-calendar-o</code></p>
+                                <p><i class="timor-icon-fire-extinguisher timor-icon"></i><code>.timor-icon-fire-extinguisher</code></p>
+                                <p><i class="timor-icon-rocket timor-icon"></i><code>.timor-icon-rocket</code></p>
+                                <p><i class="timor-icon-maxcdn timor-icon"></i><code>.timor-icon-maxcdn</code></p>
+                                <p><i class="timor-icon-chevron-circle-left timor-icon"></i><code>.timor-icon-chevron-circle-left</code></p>
+                                <p><i class="timor-icon-chevron-circle-right timor-icon"></i><code>.timor-icon-chevron-circle-right</code></p>
+                                <p><i class="timor-icon-chevron-circle-up timor-icon"></i><code>.timor-icon-chevron-circle-up</code></p>
+                                <p><i class="timor-icon-chevron-circle-down timor-icon"></i><code>.timor-icon-chevron-circle-down</code></p>
+                                <p><i class="timor-icon-html5 timor-icon"></i><code>.timor-icon-html5</code></p>
+                                <p><i class="timor-icon-css3 timor-icon"></i><code>.timor-icon-css3</code></p>
+                                <p><i class="timor-icon-anchor timor-icon"></i><code>.timor-icon-anchor</code></p>
+                                <p><i class="timor-icon-unlock-alt timor-icon"></i><code>.timor-icon-unlock-alt</code></p>
+                                <p><i class="timor-icon-bullseye timor-icon"></i><code>.timor-icon-bullseye</code></p>
+                                <p><i class="timor-icon-ellipsis-h timor-icon"></i><code>.timor-icon-ellipsis-h</code></p>
+                                <p><i class="timor-icon-ellipsis-v timor-icon"></i><code>.timor-icon-ellipsis-v</code></p>
+                                <p><i class="timor-icon-rss-square timor-icon"></i><code>.timor-icon-rss-square</code></p>
+                                <p><i class="timor-icon-play-circle timor-icon"></i><code>.timor-icon-play-circle</code></p>
+                                <p><i class="timor-icon-ticket timor-icon"></i><code>.timor-icon-ticket</code></p>
+                                <p><i class="timor-icon-minus-square timor-icon"></i><code>.timor-icon-minus-square</code></p>
+                                <p><i class="timor-icon-minus-square-o timor-icon"></i><code>.timor-icon-minus-square-o</code></p>
+                                <p><i class="timor-icon-level-up timor-icon"></i><code>.timor-icon-level-up</code></p>
+                                <p><i class="timor-icon-level-down timor-icon"></i><code>.timor-icon-level-down</code></p>
+                                <p><i class="timor-icon-check-square timor-icon"></i><code>.timor-icon-check-square</code></p>
+                                <p><i class="timor-icon-pencil-square timor-icon"></i><code>.timor-icon-pencil-square</code></p>
+                                <p><i class="timor-icon-external-link-square timor-icon"></i><code>.timor-icon-external-link-square</code></p>
+                                <p><i class="timor-icon-share-square timor-icon"></i><code>.timor-icon-share-square</code></p>
+                                <p><i class="timor-icon-compass timor-icon"></i><code>.timor-icon-compass</code></p>
+                                <p><i class="timor-icon-toggle-down timor-icon"></i><code>.timor-icon-toggle-down</code></p>
+                                <p><i class="timor-icon-caret-square-o-down timor-icon"></i><code>.timor-icon-caret-square-o-down</code></p>
+                                <p><i class="timor-icon-toggle-up timor-icon"></i><code>.timor-icon-toggle-up</code></p>
+                                <p><i class="timor-icon-caret-square-o-up timor-icon"></i><code>.timor-icon-caret-square-o-up</code></p>
+                                <p><i class="timor-icon-toggle-right timor-icon"></i><code>.timor-icon-toggle-right</code></p>
+                                <p><i class="timor-icon-caret-square-o-right timor-icon"></i><code>.timor-icon-caret-square-o-right</code></p>
+                                <p><i class="timor-icon-euro timor-icon"></i><code>.timor-icon-euro</code></p>
+                                <p><i class="timor-icon-eur timor-icon"></i><code>.timor-icon-eur</code></p>
+                                <p><i class="timor-icon-gbp timor-icon"></i><code>.timor-icon-gbp</code></p>
+                                <p><i class="timor-icon-dollar timor-icon"></i><code>.timor-icon-dollar</code></p>
+                                <p><i class="timor-icon-usd timor-icon"></i><code>.timor-icon-usd</code></p>
+                                <p><i class="timor-icon-rupee timor-icon"></i><code>.timor-icon-rupee</code></p>
+                                <p><i class="timor-icon-inr timor-icon"></i><code>.timor-icon-inr</code></p>
+                                <p><i class="timor-icon-cny timor-icon"></i><code>.timor-icon-cny</code></p>
+                                <p><i class="timor-icon-rmb timor-icon"></i><code>.timor-icon-rmb</code></p>
+                                <p><i class="timor-icon-yen timor-icon"></i><code>.timor-icon-yen</code></p>
+                                <p><i class="timor-icon-jpy timor-icon"></i><code>.timor-icon-jpy</code></p>
+                                <p><i class="timor-icon-ruble timor-icon"></i><code>.timor-icon-ruble</code></p>
+                                <p><i class="timor-icon-rouble timor-icon"></i><code>.timor-icon-rouble</code></p>
+                                <p><i class="timor-icon-rub timor-icon"></i><code>.timor-icon-rub</code></p>
+                                <p><i class="timor-icon-won timor-icon"></i><code>.timor-icon-won</code></p>
+                                <p><i class="timor-icon-krw timor-icon"></i><code>.timor-icon-krw</code></p>
+                                <p><i class="timor-icon-bitcoin timor-icon"></i><code>.timor-icon-bitcoin</code></p>
+                                <p><i class="timor-icon-btc timor-icon"></i><code>.timor-icon-btc</code></p>
+                                <p><i class="timor-icon-file timor-icon"></i><code>.timor-icon-file</code></p>
+                                <p><i class="timor-icon-file-text timor-icon"></i><code>.timor-icon-file-text</code></p>
+                                <p><i class="timor-icon-sort-alpha-asc timor-icon"></i><code>.timor-icon-sort-alpha-asc</code></p>
+                                <p><i class="timor-icon-sort-alpha-desc timor-icon"></i><code>.timor-icon-sort-alpha-desc</code></p>
+                                <p><i class="timor-icon-sort-amount-asc timor-icon"></i><code>.timor-icon-sort-amount-asc</code></p>
+                                <p><i class="timor-icon-sort-amount-desc timor-icon"></i><code>.timor-icon-sort-amount-desc</code></p>
+                                <p><i class="timor-icon-sort-numeric-asc timor-icon"></i><code>.timor-icon-sort-numeric-asc</code></p>
+                                <p><i class="timor-icon-sort-numeric-desc timor-icon"></i><code>.timor-icon-sort-numeric-desc</code></p>
+                                <p><i class="timor-icon-thumbs-up timor-icon"></i><code>.timor-icon-thumbs-up</code></p>
+                                <p><i class="timor-icon-thumbs-down timor-icon"></i><code>.timor-icon-thumbs-down</code></p>
+                                <p><i class="timor-icon-youtube-square timor-icon"></i><code>.timor-icon-youtube-square</code></p>
+                                <p><i class="timor-icon-youtube timor-icon"></i><code>.timor-icon-youtube</code></p>
+                                <p><i class="timor-icon-xing timor-icon"></i><code>.timor-icon-xing</code></p>
+                                <p><i class="timor-icon-xing-square timor-icon"></i><code>.timor-icon-xing-square</code></p>
+                                <p><i class="timor-icon-youtube-play timor-icon"></i><code>.timor-icon-youtube-play</code></p>
+                                <p><i class="timor-icon-dropbox timor-icon"></i><code>.timor-icon-dropbox</code></p>
+                                <p><i class="timor-icon-stack-overflow timor-icon"></i><code>.timor-icon-stack-overflow</code></p>
+                                <p><i class="timor-icon-instagram timor-icon"></i><code>.timor-icon-instagram</code></p>
+                                <p><i class="timor-icon-flickr timor-icon"></i><code>.timor-icon-flickr</code></p>
+                                <p><i class="timor-icon-adn timor-icon"></i><code>.timor-icon-adn</code></p>
+                                <p><i class="timor-icon-bitbucket timor-icon"></i><code>.timor-icon-bitbucket</code></p>
+                                <p><i class="timor-icon-bitbucket-square timor-icon"></i><code>.timor-icon-bitbucket-square</code></p>
+                                <p><i class="timor-icon-tumblr timor-icon"></i><code>.timor-icon-tumblr</code></p>
+                                <p><i class="timor-icon-tumblr-square timor-icon"></i><code>.timor-icon-tumblr-square</code></p>
+                                <p><i class="timor-icon-long-arrow-down timor-icon"></i><code>.timor-icon-long-arrow-down</code></p>
+                                <p><i class="timor-icon-long-arrow-up timor-icon"></i><code>.timor-icon-long-arrow-up</code></p>
+                                <p><i class="timor-icon-long-arrow-left timor-icon"></i><code>.timor-icon-long-arrow-left</code></p>
+                                <p><i class="timor-icon-long-arrow-right timor-icon"></i><code>.timor-icon-long-arrow-right</code></p>
+                                <p><i class="timor-icon-apple timor-icon"></i><code>.timor-icon-apple</code></p>
+                                <p><i class="timor-icon-windows timor-icon"></i><code>.timor-icon-windows</code></p>
+                                <p><i class="timor-icon-android timor-icon"></i><code>.timor-icon-android</code></p>
+                                <p><i class="timor-icon-linux timor-icon"></i><code>.timor-icon-linux</code></p>
+                                <p><i class="timor-icon-dribbble timor-icon"></i><code>.timor-icon-dribbble</code></p>
+                                <p><i class="timor-icon-skype timor-icon"></i><code>.timor-icon-skype</code></p>
+                                <p><i class="timor-icon-foursquare timor-icon"></i><code>.timor-icon-foursquare</code></p>
+                                <p><i class="timor-icon-trello timor-icon"></i><code>.timor-icon-trello</code></p>
+                                <p><i class="timor-icon-female timor-icon"></i><code>.timor-icon-female</code></p>
+                                <p><i class="timor-icon-male timor-icon"></i><code>.timor-icon-male</code></p>
+                                <p><i class="timor-icon-gittip timor-icon"></i><code>.timor-icon-gittip</code></p>
+                                <p><i class="timor-icon-sun-o timor-icon"></i><code>.timor-icon-sun-o</code></p>
+                                <p><i class="timor-icon-moon-o timor-icon"></i><code>.timor-icon-moon-o</code></p>
+                                <p><i class="timor-icon-archive timor-icon"></i><code>.timor-icon-archive</code></p>
+                                <p><i class="timor-icon-bug timor-icon"></i><code>.timor-icon-bug</code></p>
+                                <p><i class="timor-icon-vk timor-icon"></i><code>.timor-icon-vk</code></p>
+                                <p><i class="timor-icon-weibo timor-icon"></i><code>.timor-icon-weibo</code></p>
+                                <p><i class="timor-icon-renren timor-icon"></i><code>.timor-icon-renren</code></p>
+                                <p><i class="timor-icon-pagelines timor-icon"></i><code>.timor-icon-pagelines</code></p>
+                                <p><i class="timor-icon-stack-exchange timor-icon"></i><code>.timor-icon-stack-exchange</code></p>
+                                <p><i class="timor-icon-arrow-circle-o-right timor-icon"></i><code>.timor-icon-arrow-circle-o-right</code></p>
+                                <p><i class="timor-icon-arrow-circle-o-left timor-icon"></i><code>.timor-icon-arrow-circle-o-left</code></p>
+                                <p><i class="timor-icon-toggle-left timor-icon"></i><code>.timor-icon-toggle-left</code></p>
+                                <p><i class="timor-icon-caret-square-o-left timor-icon"></i><code>.timor-icon-caret-square-o-left</code></p>
+                                <p><i class="timor-icon-dot-circle-o timor-icon"></i><code>.timor-icon-dot-circle-o</code></p>
+                                <p><i class="timor-icon-wheelchair timor-icon"></i><code>.timor-icon-wheelchair</code></p>
+                                <p><i class="timor-icon-vimeo-square timor-icon"></i><code>.timor-icon-vimeo-square</code></p>
+                                <p><i class="timor-icon-turkish-lira timor-icon"></i><code>.timor-icon-turkish-lira</code></p>
+                                <p><i class="timor-icon-try timor-icon"></i><code>.timor-icon-try</code></p>
+                                <p><i class="timor-icon-plus-square-o timor-icon"></i><code>.timor-icon-plus-square-o</code></p>
+                                <p><i class="timor-icon-space-shuttle timor-icon"></i><code>.timor-icon-space-shuttle</code></p>
+                                <p><i class="timor-icon-slack timor-icon"></i><code>.timor-icon-slack</code></p>
+                                <p><i class="timor-icon-envelope-square timor-icon"></i><code>.timor-icon-envelope-square</code></p>
+                                <p><i class="timor-icon-wordpress timor-icon"></i><code>.timor-icon-wordpress</code></p>
+                                <p><i class="timor-icon-openid timor-icon"></i><code>.timor-icon-openid</code></p>
+                                <p><i class="timor-icon-institution timor-icon"></i><code>.timor-icon-institution</code></p>
+                                <p><i class="timor-icon-bank timor-icon"></i><code>.timor-icon-bank</code></p>
+                                <p><i class="timor-icon-university timor-icon"></i><code>.timor-icon-university</code></p>
+                                <p><i class="timor-icon-mortar-board timor-icon"></i><code>.timor-icon-mortar-board</code></p>
+                                <p><i class="timor-icon-graduation-cap timor-icon"></i><code>.timor-icon-graduation-cap</code></p>
+                                <p><i class="timor-icon-yahoo timor-icon"></i><code>.timor-icon-yahoo</code></p>
+                                <p><i class="timor-icon-google timor-icon"></i><code>.timor-icon-google</code></p>
+                                <p><i class="timor-icon-reddit timor-icon"></i><code>.timor-icon-reddit</code></p>
+                                <p><i class="timor-icon-reddit-square timor-icon"></i><code>.timor-icon-reddit-square</code></p>
+                                <p><i class="timor-icon-stumbleupon-circle timor-icon"></i><code>.timor-icon-stumbleupon-circle</code></p>
+                                <p><i class="timor-icon-stumbleupon timor-icon"></i><code>.timor-icon-stumbleupon</code></p>
+                                <p><i class="timor-icon-delicious timor-icon"></i><code>.timor-icon-delicious</code></p>
+                                <p><i class="timor-icon-digg timor-icon"></i><code>.timor-icon-digg</code></p>
+                                <p><i class="timor-icon-pied-piper timor-icon"></i><code>.timor-icon-pied-piper</code></p>
+                                <p><i class="timor-icon-pied-piper-alt timor-icon"></i><code>.timor-icon-pied-piper-alt</code></p>
+                                <p><i class="timor-icon-drupal timor-icon"></i><code>.timor-icon-drupal</code></p>
+                                <p><i class="timor-icon-joomla timor-icon"></i><code>.timor-icon-joomla</code></p>
+                                <p><i class="timor-icon-language timor-icon"></i><code>.timor-icon-language</code></p>
+                                <p><i class="timor-icon-fax timor-icon"></i><code>.timor-icon-fax</code></p>
+                                <p><i class="timor-icon-building timor-icon"></i><code>.timor-icon-building</code></p>
+                                <p><i class="timor-icon-child timor-icon"></i><code>.timor-icon-child</code></p>
+                                <p><i class="timor-icon-paw timor-icon"></i><code>.timor-icon-paw</code></p>
+                                <p><i class="timor-icon-spoon timor-icon"></i><code>.timor-icon-spoon</code></p>
+                                <p><i class="timor-icon-cube timor-icon"></i><code>.timor-icon-cube</code></p>
+                                <p><i class="timor-icon-cubes timor-icon"></i><code>.timor-icon-cubes</code></p>
+                                <p><i class="timor-icon-behance timor-icon"></i><code>.timor-icon-behance</code></p>
+                                <p><i class="timor-icon-behance-square timor-icon"></i><code>.timor-icon-behance-square</code></p>
+                                <p><i class="timor-icon-steam timor-icon"></i><code>.timor-icon-steam</code></p>
+                                <p><i class="timor-icon-steam-square timor-icon"></i><code>.timor-icon-steam-square</code></p>
+                                <p><i class="timor-icon-recycle timor-icon"></i><code>.timor-icon-recycle</code></p>
+                                <p><i class="timor-icon-automobile timor-icon"></i><code>.timor-icon-automobile</code></p>
+                                <p><i class="timor-icon-car timor-icon"></i><code>.timor-icon-car</code></p>
+                                <p><i class="timor-icon-cab timor-icon"></i><code>.timor-icon-cab</code></p>
+                                <p><i class="timor-icon-taxi timor-icon"></i><code>.timor-icon-taxi</code></p>
+                                <p><i class="timor-icon-tree timor-icon"></i><code>.timor-icon-tree</code></p>
+                                <p><i class="timor-icon-spotify timor-icon"></i><code>.timor-icon-spotify</code></p>
+                                <p><i class="timor-icon-deviantart timor-icon"></i><code>.timor-icon-deviantart</code></p>
+                                <p><i class="timor-icon-soundcloud timor-icon"></i><code>.timor-icon-soundcloud</code></p>
+                                <p><i class="timor-icon-database timor-icon"></i><code>.timor-icon-database</code></p>
+                                <p><i class="timor-icon-file-pdf-o timor-icon"></i><code>.timor-icon-file-pdf-o</code></p>
+                                <p><i class="timor-icon-file-word-o timor-icon"></i><code>.timor-icon-file-word-o</code></p>
+                                <p><i class="timor-icon-file-excel-o timor-icon"></i><code>.timor-icon-file-excel-o</code></p>
+                                <p><i class="timor-icon-file-powerpoint-o timor-icon"></i><code>.timor-icon-file-powerpoint-o</code></p>
+                                <p><i class="timor-icon-file-photo-o timor-icon"></i><code>.timor-icon-file-photo-o</code></p>
+                                <p><i class="timor-icon-file-picture-o timor-icon"></i><code>.timor-icon-file-picture-o</code></p>
+                                <p><i class="timor-icon-file-image-o timor-icon"></i><code>.timor-icon-file-image-o</code></p>
+                                <p><i class="timor-icon-file-zip-o timor-icon"></i><code>.timor-icon-file-zip-o</code></p>
+                                <p><i class="timor-icon-file-archive-o timor-icon"></i><code>.timor-icon-file-archive-o</code></p>
+                                <p><i class="timor-icon-file-sound-o timor-icon"></i><code>.timor-icon-file-sound-o</code></p>
+                                <p><i class="timor-icon-file-audio-o timor-icon"></i><code>.timor-icon-file-audio-o</code></p>
+                                <p><i class="timor-icon-file-movie-o timor-icon"></i><code>.timor-icon-file-movie-o</code></p>
+                                <p><i class="timor-icon-file-video-o timor-icon"></i><code>.timor-icon-file-video-o</code></p>
+                                <p><i class="timor-icon-file-code-o timor-icon"></i><code>.timor-icon-file-code-o</code></p>
+                                <p><i class="timor-icon-vine timor-icon"></i><code>.timor-icon-vine</code></p>
+                                <p><i class="timor-icon-codepen timor-icon"></i><code>.timor-icon-codepen</code></p>
+                                <p><i class="timor-icon-jsfiddle timor-icon"></i><code>.timor-icon-jsfiddle</code></p>
+                                <p><i class="timor-icon-life-bouy timor-icon"></i><code>.timor-icon-life-bouy</code></p>
+                                <p><i class="timor-icon-life-buoy timor-icon"></i><code>.timor-icon-life-buoy</code></p>
+                                <p><i class="timor-icon-life-saver timor-icon"></i><code>.timor-icon-life-saver</code></p>
+                                <p><i class="timor-icon-support timor-icon"></i><code>.timor-icon-support</code></p>
+                                <p><i class="timor-icon-life-ring timor-icon"></i><code>.timor-icon-life-ring</code></p>
+                                <p><i class="timor-icon-circle-o-notch timor-icon"></i><code>.timor-icon-circle-o-notch</code></p>
+                                <p><i class="timor-icon-ra timor-icon"></i><code>.timor-icon-ra</code></p>
+                                <p><i class="timor-icon-rebel timor-icon"></i><code>.timor-icon-rebel</code></p>
+                                <p><i class="timor-icon-ge timor-icon"></i><code>.timor-icon-ge</code></p>
+                                <p><i class="timor-icon-empire timor-icon"></i><code>.timor-icon-empire</code></p>
+                                <p><i class="timor-icon-git-square timor-icon"></i><code>.timor-icon-git-square</code></p>
+                                <p><i class="timor-icon-git timor-icon"></i><code>.timor-icon-git</code></p>
+                                <p><i class="timor-icon-hacker-news timor-icon"></i><code>.timor-icon-hacker-news</code></p>
+                                <p><i class="timor-icon-tencent-weibo timor-icon"></i><code>.timor-icon-tencent-weibo</code></p>
+                                <p><i class="timor-icon-qq timor-icon"></i><code>.timor-icon-qq</code></p>
+                                <p><i class="timor-icon-wechat timor-icon"></i><code>.timor-icon-wechat</code></p>
+                                <p><i class="timor-icon-weixin timor-icon"></i><code>.timor-icon-weixin</code></p>
+                                <p><i class="timor-icon-send timor-icon"></i><code>.timor-icon-send</code></p>
+                                <p><i class="timor-icon-paper-plane timor-icon"></i><code>.timor-icon-paper-plane</code></p>
+                                <p><i class="timor-icon-send-o timor-icon"></i><code>.timor-icon-send-o</code></p>
+                                <p><i class="timor-icon-paper-plane-o timor-icon"></i><code>.timor-icon-paper-plane-o</code></p>
+                                <p><i class="timor-icon-history timor-icon"></i><code>.timor-icon-history</code></p>
+                                <p><i class="timor-icon-circle timor-icon"></i><code>.timor-icon-circle</code></p>
+                                <p><i class="timor-icon-header timor-icon"></i><code>.timor-icon-header</code></p>
+                                <p><i class="timor-icon-paragraph timor-icon"></i><code>.timor-icon-paragraph</code></p>
+                                <p><i class="timor-icon-sliders timor-icon"></i><code>.timor-icon-sliders</code></p>
+                                <p><i class="timor-icon-share-alt timor-icon"></i><code>.timor-icon-share-alt</code></p>
+                                <p><i class="timor-icon-share-alt-square timor-icon"></i><code>.timor-icon-share-alt-square</code></p>
+                                <p><i class="timor-icon-bomb timor-icon"></i><code>.timor-icon-bomb</code></p>
+                                <p><i class="timor-icon-soccer-ball-o timor-icon"></i><code>.timor-icon-soccer-ball-o</code></p>
+                                <p><i class="timor-icon-futbol-o timor-icon"></i><code>.timor-icon-futbol-o</code></p>
+                                <p><i class="timor-icon-tty timor-icon"></i><code>.timor-icon-tty</code></p>
+                                <p><i class="timor-icon-binoculars timor-icon"></i><code>.timor-icon-binoculars</code></p>
+                                <p><i class="timor-icon-plug timor-icon"></i><code>.timor-icon-plug</code></p>
+                                <p><i class="timor-icon-slideshare timor-icon"></i><code>.timor-icon-slideshare</code></p>
+                                <p><i class="timor-icon-twitch timor-icon"></i><code>.timor-icon-twitch</code></p>
+                                <p><i class="timor-icon-yelp timor-icon"></i><code>.timor-icon-yelp</code></p>
+                                <p><i class="timor-icon-newspaper-o timor-icon"></i><code>.timor-icon-newspaper-o</code></p>
+                                <p><i class="timor-icon-wifi timor-icon"></i><code>.timor-icon-wifi</code></p>
+                                <p><i class="timor-icon-calculator timor-icon"></i><code>.timor-icon-calculator</code></p>
+                                <p><i class="timor-icon-paypal timor-icon"></i><code>.timor-icon-paypal</code></p>
+                                <p><i class="timor-icon-google-wallet timor-icon"></i><code>.timor-icon-google-wallet</code></p>
+                                <p><i class="timor-icon-cc-visa timor-icon"></i><code>.timor-icon-cc-visa</code></p>
+                                <p><i class="timor-icon-cc-mastercard timor-icon"></i><code>.timor-icon-cc-mastercard</code></p>
+                                <p><i class="timor-icon-cc-discover timor-icon"></i><code>.timor-icon-cc-discover</code></p>
+                                <p><i class="timor-icon-cc-amex timor-icon"></i><code>.timor-icon-cc-amex</code></p>
+                                <p><i class="timor-icon-cc-paypal timor-icon"></i><code>.timor-icon-cc-paypal</code></p>
+                                <p><i class="timor-icon-cc-stripe timor-icon"></i><code>.timor-icon-cc-stripe</code></p>
+                                <p><i class="timor-icon-bell-slash timor-icon"></i><code>.timor-icon-bell-slash</code></p>
+                                <p><i class="timor-icon-bell-slash-o timor-icon"></i><code>.timor-icon-bell-slash-o</code></p>
+                                <p><i class="timor-icon-trash timor-icon"></i><code>.timor-icon-trash</code></p>
+                                <p><i class="timor-icon-copyright timor-icon"></i><code>.timor-icon-copyright</code></p>
+                                <p><i class="timor-icon-at timor-icon"></i><code>.timor-icon-at</code></p>
+                                <p><i class="timor-icon-eyedropper timor-icon"></i><code>.timor-icon-eyedropper</code></p>
+                                <p><i class="timor-icon-paint-brush timor-icon"></i><code>.timor-icon-paint-brush</code></p>
+                                <p><i class="timor-icon-birthday-cake timor-icon"></i><code>.timor-icon-birthday-cake</code></p>
+                                <p><i class="timor-icon-area-chart timor-icon"></i><code>.timor-icon-area-chart</code></p>
+                                <p><i class="timor-icon-pie-chart timor-icon"></i><code>.timor-icon-pie-chart</code></p>
+                                <p><i class="timor-icon-line-chart timor-icon"></i><code>.timor-icon-line-chart</code></p>
+                                <p><i class="timor-icon-lastfm timor-icon"></i><code>.timor-icon-lastfm</code></p>
+                                <p><i class="timor-icon-lastfm-square timor-icon"></i><code>.timor-icon-lastfm-square</code></p>
+                                <p><i class="timor-icon-toggle-off timor-icon"></i><code>.timor-icon-toggle-off</code></p>
+                                <p><i class="timor-icon-toggle-on timor-icon"></i><code>.timor-icon-toggle-on</code></p>
+                                <p><i class="timor-icon-bicycle timor-icon"></i><code>.timor-icon-bicycle</code></p>
+                                <p><i class="timor-icon-bus timor-icon"></i><code>.timor-icon-bus</code></p>
+                                <p><i class="timor-icon-ioxhost timor-icon"></i><code>.timor-icon-ioxhost</code></p>
+                                <p><i class="timor-icon-angellist timor-icon"></i><code>.timor-icon-angellist</code></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="timor-font-weight" id="form">表单</h3>
+                    <h5 class="timor-font-weight">默认文本框</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p><input type="text"/></p>
+                        <p><input type="text" class="timor-radius"/></p>
+                    </div>
+                    <h5 class="timor-font-weight">尺寸</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <p><input type="text" placeholder="Default"/></p>
+                        <p><input type="text" class="timor-input-lg" placeholder="Timor-input-lg"/></p>
+                        <p><input type="text" class="timor-input-sm" placeholder="Timor-input-sm"/></p>
+                    </div>
+                    <h5 class="timor-font-weight">样式</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-row">
+                            <div class="timor-span-6">
+                                <p><input type="text" placeholder="Default"/></p>
+                                <p><input type="text" placeholder="Success"/> <i class="timor-icon timor-icon-check timor-text-success"></i></p>
+                                <p><input type="text" placeholder="Waring"/> <i class="timor-icon timor-icon-warning timor-text-warning"></i></p>
+                                <p><input type="text" placeholder="false"/> <i class="timor-icon timor-icon-close timor-text-danger"></i></p>
+                                <p><input type="text" placeholder="calendar"/> <i class="timor-icon timor-icon-calendar"></i></p>
+                            </div>
+                            <div class="timor-span-6">
+                                <p><input type="text" class="timor-input-primary" placeholder="Primary"/></p>
+                                <p><input type="text" class="timor-input-success" placeholder="Success"/></p>
+                                <p><input type="text" class="timor-input-warning" placeholder="Waring"/></p>
+                                <p><input type="text" class="timor-input-danger" placeholder="false"/></p>
+                                <p><input type="text" class="timor-input-info" placeholder="info"/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="timor-font-weight">文本密码组合框</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-row">
+                            <div class="timor-span-6">
+                                <div class="timor-input-group">
+                                    <input type="text"/><input type="password"/>
+                                </div>
+                            </div>
+                            <div class="timor-span-6">
+                                <div class="timor-input-group">
+                                    <input type="text" placeholder="user name" class="timor-radius"/><input placeholder="passowrd" type="password" class="timor-radius"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="timor-font-weight" id="table">表格</h3>
+                    <h5 class="timor-table">默认样式</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <table class="timor-table" width="100%">
+                            <tr>
+                                <th>序号</th>
+                                <th>name</th>
+                                <th>age</th>
+                                <th>family</th>
+                                <th>address</th>
+                            </tr>
+                            <tr class="timor-active">
+                                <td>1</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h5 class="timor-table">鼠标经过变色</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <table class="timor-table timor-table-hover" width="100%">
+                            <tr>
+                                <th>序号</th>
+                                <th>name</th>
+                                <th>age</th>
+                                <th>family</th>
+                                <th>address</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h5 class="timor-table">隔行表格</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <table class="timor-table timor-table-striped" width="100%">
+                            <tr>
+                                <th>序号</th>
+                                <th>name</th>
+                                <th>age</th>
+                                <th>family</th>
+                                <th>address</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h5 class="timor-table">紧凑型表格</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <table class="timor-table timor-table-condensed" width="100%">
+                            <tr>
+                                <th>序号</th>
+                                <th>name</th>
+                                <th>age</th>
+                                <th>family</th>
+                                <th>address</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h5 class="timor-table">状态表格</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <table class="timor-table timor-table-hover" width="100%">
+                            <tr>
+                                <th>序号</th>
+                                <th>name</th>
+                                <th>age</th>
+                                <th>family</th>
+                                <th>address</th>
+                            </tr>
+                            <tr class="timor-table-active">
+                                <td>1</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr class="timor-table-success">
+                                <td>2</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr class="timor-table-info">
+                                <td>3</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr class="timor-table-warning">
+                                <td>4</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr class="timor-table-danger">
+                                <td>5</td>
+                                <td>cashely</td>
+                                <td>25</td>
+                                <td>cashely.shi</td>
+                                <td>chaina</td>
+                            </tr>
+                            <tr>
+                                <td class="timor-table-active">5</td>
+                                <td class="timor-table-success">cashely</td>
+                                <td class="timor-table-info">25</td>
+                                <td class="timor-table-warning">cashely.shi</td>
+                                <td class="timor-table-danger">chaina</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3 class="timor-font-weight" id="image">图片</h3>
+                    <h5>给图片加上<code>.timor-img</code>可以使图片营造响应式布局，让图片采用100%来填充外框。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <img class="timor-img" src="images/juhua-008.jpg"/>
+                    </div>
+                    <h5>可以使用三种样式给图片加上不同的外形，<code>.timor-radius</code>(3像素圆角)、<code>.timor-circle</code>(50%圆角=圆形)、<code>.timor-img-pad</code>(使用的时候最好是配合<code>.timor-line</code>可以形成3像素内填充的效果)。</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <img class="timor-img timor-radius" style="width:100px;height:100px;" src="images/juhua-008.jpg"/>
+                        <img class="timor-img timor-circle" style="width:100px;height:100px;" src="images/juhua-008.jpg"/>
+                        <img class="timor-img timor-img-pad timor-line" style="width:100px;height:100px;" src="images/juhua-008.jpg"/>
+                        <img class="timor-img timor-radius timor-img-pad timor-line" style="width:100px;height:100px;" src="images/juhua-008.jpg"/>
+                        <img class="timor-img timor-circle timor-img-pad timor-line timor-shadow" style="width:100px;height:100px;" src="images/juhua-008.jpg"/>
+                    </div>
+                    <h3 class="timor-font-weight" id="load">加载</h3>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-loading">
+                            <img style="visibility: hidden;width:50%;" class="timor-img" src="images/juhua-008.jpg"/>
+                        </div>
+                    </div>
+                    <h3 class="timor-font-weight" id="breadnav">面包屑导航</h3>
+                    <h5 class="timor-font-weight">默认样式</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ol class="timor-breadnav">
+                            <li><a href="javascript:void;">首页</a></li>
+                            <li><a href="javascript:void;">列表</a></li>
+                            <li>内容</li>
+                        </ol>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;ol class="timor-breadnav"&gt;
+    &lt;li&gt;&lt;a href="javascript:void;"&gt;首页&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:void;"&gt;列表&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;内容&lt;/li&gt;
+&lt;/ol&gt;
+</pre>    
+                    </div>
+                    <h5 class="timor-font-weight">斜线样式</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ol class="timor-breadnav timor-breadnav-slash">
+                            <li><a href="javascript:void;">首页</a></li>
+                            <li><a href="javascript:void;">列表</a></li>
+                            <li>内容</li>
+                        </ol>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;ol class="timor-breadnav timor-breadnav-slash"&gt;
+    &lt;li&gt;&lt;a href="javascript:void;"&gt;首页&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:void;"&gt;列表&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;内容&lt;/li&gt;
+&lt;/ol&gt;
+</pre>    
+                    </div>
+                    <h5 class="timor-font-weight">包含Icon样式</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ol class="timor-breadnav">
+                            <li  class="timor-icon-home"><a href="javascript:void;">首页</a></li>
+                            <li><a href="javascript:void;">列表</a></li>
+                            <li>内容</li>
+                        </ol>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;ol class="timor-breadnav"&gt;
+    &lt;li class="timor-icon-home"&gt;&lt;a href="javascript:void;"&gt;首页&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="javascript:void;"&gt;列表&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;内容&lt;/li&gt;
+&lt;/ol&gt;
+</pre>    
+                    </div>
+                    <h3 class="timor-font-weight" id="close">关闭按钮</h5>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <a href="javascript:;" class="timor-close">×</a><br/>
+                        <button class="timor-close">×</button>
+                    </div>
+                    <div class="demo-box timor-line timor-box timor-radius">
+<pre class="timor-text-red">
+&lt;a href="javascript:;" class="timor-close"&gt;×&lt;/a&gt;
+&lt;button class="timor-close"&gt;×&lt;/button&gt;
+</pre>     
+                    </div>
+                    <h3 class="timor-font-weight" id="nav">导航</h3>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav">
+                            <li class="timor-nav-active"><a href="#">首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><a href="#">菜单栏二</a></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav timor-list-horizontal timor-nav-radius">
+                            <li class="timor-nav-active"><a href="#">首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><a href="#">菜单栏二</a></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav timor-list-horizontal timor-tab">
+                            <li class="timor-nav-active"><a href="#">首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><a href="#">菜单栏二</a></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav timor-list-horizontal timor-nav-flex timor-tab">
+                            <li class="timor-nav-active"><a href="#">首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><a href="#">菜单栏二</a></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav timor-list-horizontal timor-nav-flex">
+                            <li class="timor-nav-active"><a href="#">首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><a href="#">菜单栏二</a></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav timor-list-horizontal">
+                            <li class="timor-nav-active"><a href="#">首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><a href="#">菜单栏二</a></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li class="timor-disable"><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav timor-list-horizontal">
+                            <li class="timor-nav-active"><a href="#"><i class="timor-icon-home"></i> 首页</a></li>
+                            <li><a href="#"><i class="timor-icon-html5"></i> 菜单栏一</a></li>
+                            <li><a href="#"><i class="timor-icon-map-marker"></i> 菜单栏二</a></li>
+                            <li><a href="#"><i class="timor-icon-home"></i> 菜单栏三</a></li>
+                            <li class="timor-disable"><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <ul class="timor-nav">
+                            <li><a href="#"><i class="timor-icon-home"></i> 首页</a></li>
+                            <li><a href="#">菜单栏一</a></li>
+                            <li><hr class="timor-line-bottom"/></li>
+                            <li><a href="#">菜单栏三</a></li>
+                            <li><a href="#">菜单栏四</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="timor-font-weight" id="panel">面板</h3>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel">
+                            <h5 class="timor-panel-header">面板标题<a href="#" class="timor-close">×</a></h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel">
+                            <h5 class="timor-panel-header">面板标题<em class="timor-panel-tag timor-radius">3</em></h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel timor-panel-primary">
+                            <h5 class="timor-panel-header">面板标题<em class="timor-panel-tag timor-radius">3</em></h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel timor-panel-success">
+                            <h5 class="timor-panel-header">面板标题<em class="timor-panel-tag timor-radius">3</em></h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel timor-panel-danger">
+                            <h5 class="timor-panel-header">面板标题<em class="timor-panel-tag timor-radius">3</em></h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel timor-panel-info">
+                            <h5 class="timor-panel-header">面板标题<em class="timor-panel-tag timor-radius">3</em></h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-panel timor-panel-warning">
+                            <h5 class="timor-panel-header">面板标题</h5>
+                            <div class="timor-panel-content">面板内容</div>
+                            <h5 class="timor-panel-header">面板标题</h5>
+                            <div class="timor-panel-content">面板内容</div>
+                            <h5 class="timor-panel-header">面板标题</h5>
+                            <div class="timor-panel-content">面板内容</div>
+                            <h5 class="timor-panel-header">面板标题</h5>
+                            <div class="timor-panel-content">面板内容</div>
+                            <h5 class="timor-panel-header">面板标题</h5>
+                            <div class="timor-panel-content">面板内容</div>
+                            <h5 class="timor-panel-header">面板标题</h5>
+                            <div class="timor-panel-content">面板内容</div>
+                        </div>
+                    </div>
+                    <h3 class="timor-font-weight" id="progress">进度条</h3>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <span class="demo-example">实例</span>
+                        <div class="timor-progress">
+                            <p class="timor-progress-bar">
+                                <em class="timor-progress-loading"></em>
+                                <em class="timor-progress-total"></em>
+                            </p>
+                            <p class="timor-progress-text">50%</p>
+                        </div>
+                        <div class="timor-progress timor-progress-success">
+                            <p class="timor-progress-bar">
+                                <em class="timor-progress-loading"></em>
+                                <em class="timor-progress-total"></em>
+                            </p>
+                            <p class="timor-progress-text">50%</p>
+                        </div>
+                        <div class="timor-progress timor-progress-primary">
+                            <p class="timor-progress-bar">
+                                <em class="timor-progress-loading"></em>
+                                <em class="timor-progress-total"></em>
+                            </p>
+                            <p class="timor-progress-text">50%</p>
+                        </div>
+                        <div class="timor-progress timor-progress-danger">
+                            <p class="timor-progress-bar">
+                                <em class="timor-progress-loading"></em>
+                                <em class="timor-progress-total"></em>
+                            </p>
+                            <p class="timor-progress-text">50%</p>
+                        </div>
+                        <div class="timor-progress timor-progress-warning">
+                            <p class="timor-progress-bar">
+                                <em class="timor-progress-loading"></em>
+                                <em class="timor-progress-total"></em>
+                            </p>
+                            <p class="timor-progress-text">50%</p>
+                        </div>
+                        <div class="timor-progress timor-progress-info">
+                            <p class="timor-progress-bar">
+                                <em class="timor-progress-loading"></em>
+                                <em class="timor-progress-total"></em>
+                            </p>
+                            <p class="timor-progress-text">50%</p>
+                        </div>
+                    </div>
+                    <h3 class="timor-font-weight" id="pagina">分页</h3>
+                    <div class="demo-fff-box timor-line timor-box timor-radius">
+                        <p class="timor-btn-group"><a href="#" class="timor-btn timor-btn-primary">1</a><a href="#" class="timor-btn timor-btn-default">2</a><a href="#" class="timor-btn timor-btn-default">3</a><a href="#" class="timor-btn timor-btn-default">4</a><a href="#" class="timor-btn timor-btn-default">5</a></p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script>
+        $(".timor-slider ul").sliderScroll();
+    </script>
+</body>
+</html>

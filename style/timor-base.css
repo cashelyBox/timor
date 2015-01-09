@@ -1,0 +1,3307 @@
+@charset "UTF-8";
+html, .timor-container, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html, .timor-container {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.timor-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.5em;
+  line-height: 0.75em;
+  vertical-align: -3%;
+}
+
+.timor-icon-sm {
+  font-size: 1em;
+  vertical-align: 5%;
+}
+
+.timor-icon-2x {
+  font-size: 2em;
+}
+
+.timor-icon-3x {
+  font-size: 3em;
+}
+
+.timor-icon-4x {
+  font-size: 4em;
+}
+
+.timor-icon-5x {
+  font-size: 5em;
+}
+
+.timor-icon-glass:before {
+  content: "";
+}
+
+.timor-icon-music:before {
+  content: "";
+}
+
+.timor-icon-search:before {
+  content: "";
+}
+
+.timor-icon-envelope-o:before {
+  content: "";
+}
+
+.timor-icon-heart:before {
+  content: "";
+}
+
+.timor-icon-star:before {
+  content: "";
+}
+
+.timor-icon-star-o:before {
+  content: "";
+}
+
+.timor-icon-user:before {
+  content: "";
+}
+
+.timor-icon-film:before {
+  content: "";
+}
+
+.timor-icon-th-large:before {
+  content: "";
+}
+
+.timor-icon-th:before {
+  content: "";
+}
+
+.timor-icon-th-list:before {
+  content: "";
+}
+
+.timor-icon-check:before {
+  content: "";
+}
+
+.timor-icon-remove:before,
+.timor-icon-close:before,
+.timor-icon-times:before {
+  content: "";
+}
+
+.timor-icon-search-plus:before {
+  content: "";
+}
+
+.timor-icon-search-minus:before {
+  content: "";
+}
+
+.timor-icon-power-off:before {
+  content: "";
+}
+
+.timor-icon-signal:before {
+  content: "";
+}
+
+.timor-icon-gear:before,
+.timor-icon-cog:before {
+  content: "";
+}
+
+.timor-icon-trash-o:before {
+  content: "";
+}
+
+.timor-icon-home:before {
+  content: "";
+}
+
+.timor-icon-file-o:before {
+  content: "";
+}
+
+.timor-icon-clock-o:before {
+  content: "";
+}
+
+.timor-icon-road:before {
+  content: "";
+}
+
+.timor-icon-download:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-o-down:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-o-up:before {
+  content: "";
+}
+
+.timor-icon-inbox:before {
+  content: "";
+}
+
+.timor-icon-play-circle-o:before {
+  content: "";
+}
+
+.timor-icon-rotate-right:before,
+.timor-icon-repeat:before {
+  content: "";
+}
+
+.timor-icon-refresh:before {
+  content: "";
+}
+
+.timor-icon-list-alt:before {
+  content: "";
+}
+
+.timor-icon-lock:before {
+  content: "";
+}
+
+.timor-icon-flag:before {
+  content: "";
+}
+
+.timor-icon-headphones:before {
+  content: "";
+}
+
+.timor-icon-volume-off:before {
+  content: "";
+}
+
+.timor-icon-volume-down:before {
+  content: "";
+}
+
+.timor-icon-volume-up:before {
+  content: "";
+}
+
+.timor-icon-qrcode:before {
+  content: "";
+}
+
+.timor-icon-barcode:before {
+  content: "";
+}
+
+.timor-icon-tag:before {
+  content: "";
+}
+
+.timor-icon-tags:before {
+  content: "";
+}
+
+.timor-icon-book:before {
+  content: "";
+}
+
+.timor-icon-bookmark:before {
+  content: "";
+}
+
+.timor-icon-print:before {
+  content: "";
+}
+
+.timor-icon-camera:before {
+  content: "";
+}
+
+.timor-icon-font:before {
+  content: "";
+}
+
+.timor-icon-bold:before {
+  content: "";
+}
+
+.timor-icon-italic:before {
+  content: "";
+}
+
+.timor-icon-text-height:before {
+  content: "";
+}
+
+.timor-icon-text-width:before {
+  content: "";
+}
+
+.timor-icon-align-left:before {
+  content: "";
+}
+
+.timor-icon-align-center:before {
+  content: "";
+}
+
+.timor-icon-align-right:before {
+  content: "";
+}
+
+.timor-icon-align-justify:before {
+  content: "";
+}
+
+.timor-icon-list:before {
+  content: "";
+}
+
+.timor-icon-dedent:before,
+.timor-icon-outdent:before {
+  content: "";
+}
+
+.timor-icon-indent:before {
+  content: "";
+}
+
+.timor-icon-video-camera:before {
+  content: "";
+}
+
+.timor-icon-photo:before,
+.timor-icon-image:before,
+.timor-icon-picture-o:before {
+  content: "";
+}
+
+.timor-icon-pencil:before {
+  content: "";
+}
+
+.timor-icon-map-marker:before {
+  content: "";
+}
+
+.timor-icon-adjust:before {
+  content: "";
+}
+
+.timor-icon-tint:before {
+  content: "";
+}
+
+.timor-icon-edit:before,
+.timor-icon-pencil-square-o:before {
+  content: "";
+}
+
+.timor-icon-share-square-o:before {
+  content: "";
+}
+
+.timor-icon-check-square-o:before {
+  content: "";
+}
+
+.timor-icon-arrows:before {
+  content: "";
+}
+
+.timor-icon-step-backward:before {
+  content: "";
+}
+
+.timor-icon-fast-backward:before {
+  content: "";
+}
+
+.timor-icon-backward:before {
+  content: "";
+}
+
+.timor-icon-play:before {
+  content: "";
+}
+
+.timor-icon-pause:before {
+  content: "";
+}
+
+.timor-icon-stop:before {
+  content: "";
+}
+
+.timor-icon-forward:before {
+  content: "";
+}
+
+.timor-icon-fast-forward:before {
+  content: "";
+}
+
+.timor-icon-step-forward:before {
+  content: "";
+}
+
+.timor-icon-eject:before {
+  content: "";
+}
+
+.timor-icon-chevron-left:before {
+  content: "";
+}
+
+.timor-icon-chevron-right:before {
+  content: "";
+}
+
+.timor-icon-plus-circle:before {
+  content: "";
+}
+
+.timor-icon-minus-circle:before {
+  content: "";
+}
+
+.timor-icon-times-circle:before {
+  content: "";
+}
+
+.timor-icon-check-circle:before {
+  content: "";
+}
+
+.timor-icon-question-circle:before {
+  content: "";
+}
+
+.timor-icon-info-circle:before {
+  content: "";
+}
+
+.timor-icon-crosshairs:before {
+  content: "";
+}
+
+.timor-icon-times-circle-o:before {
+  content: "";
+}
+
+.timor-icon-check-circle-o:before {
+  content: "";
+}
+
+.timor-icon-ban:before {
+  content: "";
+}
+
+.timor-icon-arrow-left:before {
+  content: "";
+}
+
+.timor-icon-arrow-right:before {
+  content: "";
+}
+
+.timor-icon-arrow-up:before {
+  content: "";
+}
+
+.timor-icon-arrow-down:before {
+  content: "";
+}
+
+.timor-icon-mail-forward:before,
+.timor-icon-share:before {
+  content: "";
+}
+
+.timor-icon-expand:before {
+  content: "";
+}
+
+.timor-icon-compress:before {
+  content: "";
+}
+
+.timor-icon-plus:before {
+  content: "";
+}
+
+.timor-icon-minus:before {
+  content: "";
+}
+
+.timor-icon-asterisk:before {
+  content: "";
+}
+
+.timor-icon-exclamation-circle:before {
+  content: "";
+}
+
+.timor-icon-gift:before {
+  content: "";
+}
+
+.timor-icon-leaf:before {
+  content: "";
+}
+
+.timor-icon-fire:before {
+  content: "";
+}
+
+.timor-icon-eye:before {
+  content: "";
+}
+
+.timor-icon-eye-slash:before {
+  content: "";
+}
+
+.timor-icon-warning:before,
+.timor-icon-exclamation-triangle:before {
+  content: "";
+}
+
+.timor-icon-plane:before {
+  content: "";
+}
+
+.timor-icon-calendar:before {
+  content: "";
+}
+
+.timor-icon-random:before {
+  content: "";
+}
+
+.timor-icon-comment:before {
+  content: "";
+}
+
+.timor-icon-magnet:before {
+  content: "";
+}
+
+.timor-icon-chevron-up:before {
+  content: "";
+}
+
+.timor-icon-chevron-down:before {
+  content: "";
+}
+
+.timor-icon-retweet:before {
+  content: "";
+}
+
+.timor-icon-shopping-cart:before {
+  content: "";
+}
+
+.timor-icon-folder:before {
+  content: "";
+}
+
+.timor-icon-folder-open:before {
+  content: "";
+}
+
+.timor-icon-arrows-v:before {
+  content: "";
+}
+
+.timor-icon-arrows-h:before {
+  content: "";
+}
+
+.timor-icon-bar-chart-o:before,
+.timor-icon-bar-chart:before {
+  content: "";
+}
+
+.timor-icon-twitter-square:before {
+  content: "";
+}
+
+.timor-icon-facebook-square:before {
+  content: "";
+}
+
+.timor-icon-camera-retro:before {
+  content: "";
+}
+
+.timor-icon-key:before {
+  content: "";
+}
+
+.timor-icon-gears:before,
+.timor-icon-cogs:before {
+  content: "";
+}
+
+.timor-icon-comments:before {
+  content: "";
+}
+
+.timor-icon-thumbs-o-up:before {
+  content: "";
+}
+
+.timor-icon-thumbs-o-down:before {
+  content: "";
+}
+
+.timor-icon-star-half:before {
+  content: "";
+}
+
+.timor-icon-heart-o:before {
+  content: "";
+}
+
+.timor-icon-sign-out:before {
+  content: "";
+}
+
+.timor-icon-linkedin-square:before {
+  content: "";
+}
+
+.timor-icon-thumb-tack:before {
+  content: "";
+}
+
+.timor-icon-external-link:before {
+  content: "";
+}
+
+.timor-icon-sign-in:before {
+  content: "";
+}
+
+.timor-icon-trophy:before {
+  content: "";
+}
+
+.timor-icon-github-square:before {
+  content: "";
+}
+
+.timor-icon-upload:before {
+  content: "";
+}
+
+.timor-icon-lemon-o:before {
+  content: "";
+}
+
+.timor-icon-phone:before {
+  content: "";
+}
+
+.timor-icon-square-o:before {
+  content: "";
+}
+
+.timor-icon-bookmark-o:before {
+  content: "";
+}
+
+.timor-icon-phone-square:before {
+  content: "";
+}
+
+.timor-icon-twitter:before {
+  content: "";
+}
+
+.timor-icon-facebook:before {
+  content: "";
+}
+
+.timor-icon-github:before {
+  content: "";
+}
+
+.timor-icon-unlock:before {
+  content: "";
+}
+
+.timor-icon-credit-card:before {
+  content: "";
+}
+
+.timor-icon-rss:before {
+  content: "";
+}
+
+.timor-icon-hdd-o:before {
+  content: "";
+}
+
+.timor-icon-bullhorn:before {
+  content: "";
+}
+
+.timor-icon-bell:before {
+  content: "";
+}
+
+.timor-icon-certificate:before {
+  content: "";
+}
+
+.timor-icon-hand-o-right:before {
+  content: "";
+}
+
+.timor-icon-hand-o-left:before {
+  content: "";
+}
+
+.timor-icon-hand-o-up:before {
+  content: "";
+}
+
+.timor-icon-hand-o-down:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-left:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-right:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-up:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-down:before {
+  content: "";
+}
+
+.timor-icon-globe:before {
+  content: "";
+}
+
+.timor-icon-wrench:before {
+  content: "";
+}
+
+.timor-icon-tasks:before {
+  content: "";
+}
+
+.timor-icon-filter:before {
+  content: "";
+}
+
+.timor-icon-briefcase:before {
+  content: "";
+}
+
+.timor-icon-arrows-alt:before {
+  content: "";
+}
+
+.timor-icon-group:before,
+.timor-icon-users:before {
+  content: "";
+}
+
+.timor-icon-chain:before,
+.timor-icon-link:before {
+  content: "";
+}
+
+.timor-icon-cloud:before {
+  content: "";
+}
+
+.timor-icon-flask:before {
+  content: "";
+}
+
+.timor-icon-cut:before,
+.timor-icon-scissors:before {
+  content: "";
+}
+
+.timor-icon-copy:before,
+.timor-icon-files-o:before {
+  content: "";
+}
+
+.timor-icon-paperclip:before {
+  content: "";
+}
+
+.timor-icon-save:before,
+.timor-icon-floppy-o:before {
+  content: "";
+}
+
+.timor-icon-square:before {
+  content: "";
+}
+
+.timor-icon-navicon:before,
+.timor-icon-reorder:before,
+.timor-icon-bars:before {
+  content: "";
+}
+
+.timor-icon-list-ul:before {
+  content: "";
+}
+
+.timor-icon-list-ol:before {
+  content: "";
+}
+
+.timor-icon-strikethrough:before {
+  content: "";
+}
+
+.timor-icon-underline:before {
+  content: "";
+}
+
+.timor-icon-table:before {
+  content: "";
+}
+
+.timor-icon-magic:before {
+  content: "";
+}
+
+.timor-icon-truck:before {
+  content: "";
+}
+
+.timor-icon-pinterest:before {
+  content: "";
+}
+
+.timor-icon-pinterest-square:before {
+  content: "";
+}
+
+.timor-icon-google-plus-square:before {
+  content: "";
+}
+
+.timor-icon-google-plus:before {
+  content: "";
+}
+
+.timor-icon-money:before {
+  content: "";
+}
+
+.timor-icon-caret-down:before {
+  content: "";
+}
+
+.timor-icon-caret-up:before {
+  content: "";
+}
+
+.timor-icon-caret-left:before {
+  content: "";
+}
+
+.timor-icon-caret-right:before {
+  content: "";
+}
+
+.timor-icon-columns:before {
+  content: "";
+}
+
+.timor-icon-unsorted:before,
+.timor-icon-sort:before {
+  content: "";
+}
+
+.timor-icon-sort-down:before,
+.timor-icon-sort-desc:before {
+  content: "";
+}
+
+.timor-icon-sort-up:before,
+.timor-icon-sort-asc:before {
+  content: "";
+}
+
+.timor-icon-envelope:before {
+  content: "";
+}
+
+.timor-icon-linkedin:before {
+  content: "";
+}
+
+.timor-icon-rotate-left:before,
+.timor-icon-undo:before {
+  content: "";
+}
+
+.timor-icon-legal:before,
+.timor-icon-gavel:before {
+  content: "";
+}
+
+.timor-icon-dashboard:before,
+.timor-icon-tachometer:before {
+  content: "";
+}
+
+.timor-icon-comment-o:before {
+  content: "";
+}
+
+.timor-icon-comments-o:before {
+  content: "";
+}
+
+.timor-icon-flash:before,
+.timor-icon-bolt:before {
+  content: "";
+}
+
+.timor-icon-sitemap:before {
+  content: "";
+}
+
+.timor-icon-umbrella:before {
+  content: "";
+}
+
+.timor-icon-paste:before,
+.timor-icon-clipboard:before {
+  content: "";
+}
+
+.timor-icon-lightbulb-o:before {
+  content: "";
+}
+
+.timor-icon-exchange:before {
+  content: "";
+}
+
+.timor-icon-cloud-download:before {
+  content: "";
+}
+
+.timor-icon-cloud-upload:before {
+  content: "";
+}
+
+.timor-icon-user-md:before {
+  content: "";
+}
+
+.timor-icon-stethoscope:before {
+  content: "";
+}
+
+.timor-icon-suitcase:before {
+  content: "";
+}
+
+.timor-icon-bell-o:before {
+  content: "";
+}
+
+.timor-icon-coffee:before {
+  content: "";
+}
+
+.timor-icon-cutlery:before {
+  content: "";
+}
+
+.timor-icon-file-text-o:before {
+  content: "";
+}
+
+.timor-icon-building-o:before {
+  content: "";
+}
+
+.timor-icon-hospital-o:before {
+  content: "";
+}
+
+.timor-icon-ambulance:before {
+  content: "";
+}
+
+.timor-icon-medkit:before {
+  content: "";
+}
+
+.timor-icon-fighter-jet:before {
+  content: "";
+}
+
+.timor-icon-beer:before {
+  content: "";
+}
+
+.timor-icon-h-square:before {
+  content: "";
+}
+
+.timor-icon-plus-square:before {
+  content: "";
+}
+
+.timor-icon-angle-double-left:before {
+  content: "";
+}
+
+.timor-icon-angle-double-right:before {
+  content: "";
+}
+
+.timor-icon-angle-double-up:before {
+  content: "";
+}
+
+.timor-icon-angle-double-down:before {
+  content: "";
+}
+
+.timor-icon-angle-left:before {
+  content: "";
+}
+
+.timor-icon-angle-right:before {
+  content: "";
+}
+
+.timor-icon-angle-up:before {
+  content: "";
+}
+
+.timor-icon-angle-down:before {
+  content: "";
+}
+
+.timor-icon-desktop:before {
+  content: "";
+}
+
+.timor-icon-laptop:before {
+  content: "";
+}
+
+.timor-icon-tablet:before {
+  content: "";
+}
+
+.timor-icon-mobile-phone:before,
+.timor-icon-mobile:before {
+  content: "";
+}
+
+.timor-icon-circle-o:before {
+  content: "";
+}
+
+.timor-icon-quote-left:before {
+  content: "";
+}
+
+.timor-icon-quote-right:before {
+  content: "";
+}
+
+.timor-icon-spinner:before {
+  content: "";
+}
+
+.timor-icon-circle:before {
+  content: "";
+}
+
+.timor-icon-mail-reply:before,
+.timor-icon-reply:before {
+  content: "";
+}
+
+.timor-icon-github-alt:before {
+  content: "";
+}
+
+.timor-icon-folder-o:before {
+  content: "";
+}
+
+.timor-icon-folder-open-o:before {
+  content: "";
+}
+
+.timor-icon-smile-o:before {
+  content: "";
+}
+
+.timor-icon-frown-o:before {
+  content: "";
+}
+
+.timor-icon-meh-o:before {
+  content: "";
+}
+
+.timor-icon-gamepad:before {
+  content: "";
+}
+
+.timor-icon-keyboard-o:before {
+  content: "";
+}
+
+.timor-icon-flag-o:before {
+  content: "";
+}
+
+.timor-icon-flag-checkered:before {
+  content: "";
+}
+
+.timor-icon-terminal:before {
+  content: "";
+}
+
+.timor-icon-code:before {
+  content: "";
+}
+
+.timor-icon-mail-reply-all:before,
+.timor-icon-reply-all:before {
+  content: "";
+}
+
+.timor-icon-star-half-empty:before,
+.timor-icon-star-half-full:before,
+.timor-icon-star-half-o:before {
+  content: "";
+}
+
+.timor-icon-location-arrow:before {
+  content: "";
+}
+
+.timor-icon-crop:before {
+  content: "";
+}
+
+.timor-icon-code-fork:before {
+  content: "";
+}
+
+.timor-icon-unlink:before,
+.timor-icon-chain-broken:before {
+  content: "";
+}
+
+.timor-icon-question:before {
+  content: "";
+}
+
+.timor-icon-info:before {
+  content: "";
+}
+
+.timor-icon-exclamation:before {
+  content: "";
+}
+
+.timor-icon-superscript:before {
+  content: "";
+}
+
+.timor-icon-subscript:before {
+  content: "";
+}
+
+.timor-icon-eraser:before {
+  content: "";
+}
+
+.timor-icon-puzzle-piece:before {
+  content: "";
+}
+
+.timor-icon-microphone:before {
+  content: "";
+}
+
+.timor-icon-microphone-slash:before {
+  content: "";
+}
+
+.timor-icon-shield:before {
+  content: "";
+}
+
+.timor-icon-calendar-o:before {
+  content: "";
+}
+
+.timor-icon-fire-extinguisher:before {
+  content: "";
+}
+
+.timor-icon-rocket:before {
+  content: "";
+}
+
+.timor-icon-maxcdn:before {
+  content: "";
+}
+
+.timor-icon-chevron-circle-left:before {
+  content: "";
+}
+
+.timor-icon-chevron-circle-right:before {
+  content: "";
+}
+
+.timor-icon-chevron-circle-up:before {
+  content: "";
+}
+
+.timor-icon-chevron-circle-down:before {
+  content: "";
+}
+
+.timor-icon-html5:before {
+  content: "";
+}
+
+.timor-icon-css3:before {
+  content: "";
+}
+
+.timor-icon-anchor:before {
+  content: "";
+}
+
+.timor-icon-unlock-alt:before {
+  content: "";
+}
+
+.timor-icon-bullseye:before {
+  content: "";
+}
+
+.timor-icon-ellipsis-h:before {
+  content: "";
+}
+
+.timor-icon-ellipsis-v:before {
+  content: "";
+}
+
+.timor-icon-rss-square:before {
+  content: "";
+}
+
+.timor-icon-play-circle:before {
+  content: "";
+}
+
+.timor-icon-ticket:before {
+  content: "";
+}
+
+.timor-icon-minus-square:before {
+  content: "";
+}
+
+.timor-icon-minus-square-o:before {
+  content: "";
+}
+
+.timor-icon-level-up:before {
+  content: "";
+}
+
+.timor-icon-level-down:before {
+  content: "";
+}
+
+.timor-icon-check-square:before {
+  content: "";
+}
+
+.timor-icon-pencil-square:before {
+  content: "";
+}
+
+.timor-icon-external-link-square:before {
+  content: "";
+}
+
+.timor-icon-share-square:before {
+  content: "";
+}
+
+.timor-icon-compass:before {
+  content: "";
+}
+
+.timor-icon-toggle-down:before,
+.timor-icon-caret-square-o-down:before {
+  content: "";
+}
+
+.timor-icon-toggle-up:before,
+.timor-icon-caret-square-o-up:before {
+  content: "";
+}
+
+.timor-icon-toggle-right:before,
+.timor-icon-caret-square-o-right:before {
+  content: "";
+}
+
+.timor-icon-euro:before,
+.timor-icon-eur:before {
+  content: "";
+}
+
+.timor-icon-gbp:before {
+  content: "";
+}
+
+.timor-icon-dollar:before,
+.timor-icon-usd:before {
+  content: "";
+}
+
+.timor-icon-rupee:before,
+.timor-icon-inr:before {
+  content: "";
+}
+
+.timor-icon-cny:before,
+.timor-icon-rmb:before,
+.timor-icon-yen:before,
+.timor-icon-jpy:before {
+  content: "";
+}
+
+.timor-icon-ruble:before,
+.timor-icon-rouble:before,
+.timor-icon-rub:before {
+  content: "";
+}
+
+.timor-icon-won:before,
+.timor-icon-krw:before {
+  content: "";
+}
+
+.timor-icon-bitcoin:before,
+.timor-icon-btc:before {
+  content: "";
+}
+
+.timor-icon-file:before {
+  content: "";
+}
+
+.timor-icon-file-text:before {
+  content: "";
+}
+
+.timor-icon-sort-alpha-asc:before {
+  content: "";
+}
+
+.timor-icon-sort-alpha-desc:before {
+  content: "";
+}
+
+.timor-icon-sort-amount-asc:before {
+  content: "";
+}
+
+.timor-icon-sort-amount-desc:before {
+  content: "";
+}
+
+.timor-icon-sort-numeric-asc:before {
+  content: "";
+}
+
+.timor-icon-sort-numeric-desc:before {
+  content: "";
+}
+
+.timor-icon-thumbs-up:before {
+  content: "";
+}
+
+.timor-icon-thumbs-down:before {
+  content: "";
+}
+
+.timor-icon-youtube-square:before {
+  content: "";
+}
+
+.timor-icon-youtube:before {
+  content: "";
+}
+
+.timor-icon-xing:before {
+  content: "";
+}
+
+.timor-icon-xing-square:before {
+  content: "";
+}
+
+.timor-icon-youtube-play:before {
+  content: "";
+}
+
+.timor-icon-dropbox:before {
+  content: "";
+}
+
+.timor-icon-stack-overflow:before {
+  content: "";
+}
+
+.timor-icon-instagram:before {
+  content: "";
+}
+
+.timor-icon-flickr:before {
+  content: "";
+}
+
+.timor-icon-adn:before {
+  content: "";
+}
+
+.timor-icon-bitbucket:before {
+  content: "";
+}
+
+.timor-icon-bitbucket-square:before {
+  content: "";
+}
+
+.timor-icon-tumblr:before {
+  content: "";
+}
+
+.timor-icon-tumblr-square:before {
+  content: "";
+}
+
+.timor-icon-long-arrow-down:before {
+  content: "";
+}
+
+.timor-icon-long-arrow-up:before {
+  content: "";
+}
+
+.timor-icon-long-arrow-left:before {
+  content: "";
+}
+
+.timor-icon-long-arrow-right:before {
+  content: "";
+}
+
+.timor-icon-apple:before {
+  content: "";
+}
+
+.timor-icon-windows:before {
+  content: "";
+}
+
+.timor-icon-android:before {
+  content: "";
+}
+
+.timor-icon-linux:before {
+  content: "";
+}
+
+.timor-icon-dribbble:before {
+  content: "";
+}
+
+.timor-icon-skype:before {
+  content: "";
+}
+
+.timor-icon-foursquare:before {
+  content: "";
+}
+
+.timor-icon-trello:before {
+  content: "";
+}
+
+.timor-icon-female:before {
+  content: "";
+}
+
+.timor-icon-male:before {
+  content: "";
+}
+
+.timor-icon-gittip:before {
+  content: "";
+}
+
+.timor-icon-sun-o:before {
+  content: "";
+}
+
+.timor-icon-moon-o:before {
+  content: "";
+}
+
+.timor-icon-archive:before {
+  content: "";
+}
+
+.timor-icon-bug:before {
+  content: "";
+}
+
+.timor-icon-vk:before {
+  content: "";
+}
+
+.timor-icon-weibo:before {
+  content: "";
+}
+
+.timor-icon-renren:before {
+  content: "";
+}
+
+.timor-icon-pagelines:before {
+  content: "";
+}
+
+.timor-icon-stack-exchange:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-o-right:before {
+  content: "";
+}
+
+.timor-icon-arrow-circle-o-left:before {
+  content: "";
+}
+
+.timor-icon-toggle-left:before,
+.timor-icon-caret-square-o-left:before {
+  content: "";
+}
+
+.timor-icon-dot-circle-o:before {
+  content: "";
+}
+
+.timor-icon-wheelchair:before {
+  content: "";
+}
+
+.timor-icon-vimeo-square:before {
+  content: "";
+}
+
+.timor-icon-turkish-lira:before,
+.timor-icon-try:before {
+  content: "";
+}
+
+.timor-icon-plus-square-o:before {
+  content: "";
+}
+
+.timor-icon-space-shuttle:before {
+  content: "";
+}
+
+.timor-icon-slack:before {
+  content: "";
+}
+
+.timor-icon-envelope-square:before {
+  content: "";
+}
+
+.timor-icon-wordpress:before {
+  content: "";
+}
+
+.timor-icon-openid:before {
+  content: "";
+}
+
+.timor-icon-institution:before,
+.timor-icon-bank:before,
+.timor-icon-university:before {
+  content: "";
+}
+
+.timor-icon-mortar-board:before,
+.timor-icon-graduation-cap:before {
+  content: "";
+}
+
+.timor-icon-yahoo:before {
+  content: "";
+}
+
+.timor-icon-google:before {
+  content: "";
+}
+
+.timor-icon-reddit:before {
+  content: "";
+}
+
+.timor-icon-reddit-square:before {
+  content: "";
+}
+
+.timor-icon-stumbleupon-circle:before {
+  content: "";
+}
+
+.timor-icon-stumbleupon:before {
+  content: "";
+}
+
+.timor-icon-delicious:before {
+  content: "";
+}
+
+.timor-icon-digg:before {
+  content: "";
+}
+
+.timor-icon-pied-piper:before {
+  content: "";
+}
+
+.timor-icon-pied-piper-alt:before {
+  content: "";
+}
+
+.timor-icon-drupal:before {
+  content: "";
+}
+
+.timor-icon-joomla:before {
+  content: "";
+}
+
+.timor-icon-language:before {
+  content: "";
+}
+
+.timor-icon-fax:before {
+  content: "";
+}
+
+.timor-icon-building:before {
+  content: "";
+}
+
+.timor-icon-child:before {
+  content: "";
+}
+
+.timor-icon-paw:before {
+  content: "";
+}
+
+.timor-icon-spoon:before {
+  content: "";
+}
+
+.timor-icon-cube:before {
+  content: "";
+}
+
+.timor-icon-cubes:before {
+  content: "";
+}
+
+.timor-icon-behance:before {
+  content: "";
+}
+
+.timor-icon-behance-square:before {
+  content: "";
+}
+
+.timor-icon-steam:before {
+  content: "";
+}
+
+.timor-icon-steam-square:before {
+  content: "";
+}
+
+.timor-icon-recycle:before {
+  content: "";
+}
+
+.timor-icon-automobile:before,
+.timor-icon-car:before {
+  content: "";
+}
+
+.timor-icon-cab:before,
+.timor-icon-taxi:before {
+  content: "";
+}
+
+.timor-icon-tree:before {
+  content: "";
+}
+
+.timor-icon-spotify:before {
+  content: "";
+}
+
+.timor-icon-deviantart:before {
+  content: "";
+}
+
+.timor-icon-soundcloud:before {
+  content: "";
+}
+
+.timor-icon-database:before {
+  content: "";
+}
+
+.timor-icon-file-pdf-o:before {
+  content: "";
+}
+
+.timor-icon-file-word-o:before {
+  content: "";
+}
+
+.timor-icon-file-excel-o:before {
+  content: "";
+}
+
+.timor-icon-file-powerpoint-o:before {
+  content: "";
+}
+
+.timor-icon-file-photo-o:before,
+.timor-icon-file-picture-o:before,
+.timor-icon-file-image-o:before {
+  content: "";
+}
+
+.timor-icon-file-zip-o:before,
+.timor-icon-file-archive-o:before {
+  content: "";
+}
+
+.timor-icon-file-sound-o:before,
+.timor-icon-file-audio-o:before {
+  content: "";
+}
+
+.timor-icon-file-movie-o:before,
+.timor-icon-file-video-o:before {
+  content: "";
+}
+
+.timor-icon-file-code-o:before {
+  content: "";
+}
+
+.timor-icon-vine:before {
+  content: "";
+}
+
+.timor-icon-codepen:before {
+  content: "";
+}
+
+.timor-icon-jsfiddle:before {
+  content: "";
+}
+
+.timor-icon-life-bouy:before,
+.timor-icon-life-buoy:before,
+.timor-icon-life-saver:before,
+.timor-icon-support:before,
+.timor-icon-life-ring:before {
+  content: "";
+}
+
+.timor-icon-circle-o-notch:before {
+  content: "";
+}
+
+.timor-icon-ra:before,
+.timor-icon-rebel:before {
+  content: "";
+}
+
+.timor-icon-ge:before,
+.timor-icon-empire:before {
+  content: "";
+}
+
+.timor-icon-git-square:before {
+  content: "";
+}
+
+.timor-icon-git:before {
+  content: "";
+}
+
+.timor-icon-hacker-news:before {
+  content: "";
+}
+
+.timor-icon-tencent-weibo:before {
+  content: "";
+}
+
+.timor-icon-qq:before {
+  content: "";
+}
+
+.timor-icon-wechat:before,
+.timor-icon-weixin:before {
+  content: "";
+}
+
+.timor-icon-send:before,
+.timor-icon-paper-plane:before {
+  content: "";
+}
+
+.timor-icon-send-o:before,
+.timor-icon-paper-plane-o:before {
+  content: "";
+}
+
+.timor-icon-history:before {
+  content: "";
+}
+
+.timor-icon-circle-thin:before {
+  content: "";
+}
+
+.timor-icon-header:before {
+  content: "";
+}
+
+.timor-icon-paragraph:before {
+  content: "";
+}
+
+.timor-icon-sliders:before {
+  content: "";
+}
+
+.timor-icon-share-alt:before {
+  content: "";
+}
+
+.timor-icon-share-alt-square:before {
+  content: "";
+}
+
+.timor-icon-bomb:before {
+  content: "";
+}
+
+.timor-icon-soccer-ball-o:before,
+.timor-icon-futbol-o:before {
+  content: "";
+}
+
+.timor-icon-tty:before {
+  content: "";
+}
+
+.timor-icon-binoculars:before {
+  content: "";
+}
+
+.timor-icon-plug:before {
+  content: "";
+}
+
+.timor-icon-slideshare:before {
+  content: "";
+}
+
+.timor-icon-twitch:before {
+  content: "";
+}
+
+.timor-icon-yelp:before {
+  content: "";
+}
+
+.timor-icon-newspaper-o:before {
+  content: "";
+}
+
+.timor-icon-wifi:before {
+  content: "";
+}
+
+.timor-icon-calculator:before {
+  content: "";
+}
+
+.timor-icon-paypal:before {
+  content: "";
+}
+
+.timor-icon-google-wallet:before {
+  content: "";
+}
+
+.timor-icon-cc-visa:before {
+  content: "";
+}
+
+.timor-icon-cc-mastercard:before {
+  content: "";
+}
+
+.timor-icon-cc-discover:before {
+  content: "";
+}
+
+.timor-icon-cc-amex:before {
+  content: "";
+}
+
+.timor-icon-cc-paypal:before {
+  content: "";
+}
+
+.timor-icon-cc-stripe:before {
+  content: "";
+}
+
+.timor-icon-bell-slash:before {
+  content: "";
+}
+
+.timor-icon-bell-slash-o:before {
+  content: "";
+}
+
+.timor-icon-trash:before {
+  content: "";
+}
+
+.timor-icon-copyright:before {
+  content: "";
+}
+
+.timor-icon-at:before {
+  content: "";
+}
+
+.timor-icon-eyedropper:before {
+  content: "";
+}
+
+.timor-icon-paint-brush:before {
+  content: "";
+}
+
+.timor-icon-birthday-cake:before {
+  content: "";
+}
+
+.timor-icon-area-chart:before {
+  content: "";
+}
+
+.timor-icon-pie-chart:before {
+  content: "";
+}
+
+.timor-icon-line-chart:before {
+  content: "";
+}
+
+.timor-icon-lastfm:before {
+  content: "";
+}
+
+.timor-icon-lastfm-square:before {
+  content: "";
+}
+
+.timor-icon-toggle-off:before {
+  content: "";
+}
+
+.timor-icon-toggle-on:before {
+  content: "";
+}
+
+.timor-icon-bicycle:before {
+  content: "";
+}
+
+.timor-icon-bus:before {
+  content: "";
+}
+
+.timor-icon-ioxhost:before {
+  content: "";
+}
+
+.timor-icon-angellist:before {
+  content: "";
+}
+
+.timor-icon-cc:before {
+  content: "";
+}
+
+.timor-icon-shekel:before,
+.timor-icon-sheqel:before,
+.timor-icon-ils:before {
+  content: "";
+}
+
+.timor-icon-meanpath:before {
+  content: "";
+}
+
+html, .timor-container {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.timor-layout {
+  width: 100%;
+}
+
+.timor-layout-fix, .timor-container {
+  max-width: 1000px;
+}
+
+.timor-layout-fix, .timor-container, .timor-layout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timor-container {
+  padding: 0 10px;
+  width: 100%;
+}
+
+.timor-row:after {
+  clear: both;
+}
+.timor-row:after, .timor-row:before {
+  content: " ";
+  display: table;
+}
+
+.timor-slider {
+  position: relative;
+  color: #262626;
+}
+.timor-slider a {
+  color: #4d4d4d;
+  display: block;
+  padding: 3px 0 3px 10px;
+  text-decoration: none;
+}
+.timor-slider a.active, .timor-slider a:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+.timor-slider li {
+  padding: 0 0 0 3px;
+}
+.timor-slider li.timor-border-left {
+  margin: 3px 0;
+  border-left: 3px solid #0f99df;
+  padding-left: 10px;
+}
+
+.timor-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+span.timor-nav-span {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #cccccc;
+}
+
+ul.timor-list-horizontal li {
+  display: inline-table;
+}
+ul.timor-nav > li > a {
+  display: block;
+  padding: 5px 15px;
+  color: #428bca;
+  text-decoration: none;
+}
+ul.timor-nav > li > a:hover {
+  background-color: #f2f2f2;
+  color: #3071a9;
+}
+ul.timor-nav > li.timor-disable a {
+  color: #999999;
+  cursor: not-allowed;
+}
+ul.timor-nav > li.timor-disable a:hover {
+  background: none;
+}
+ul.timor-nav > li.timor-nav-active a {
+  color: #ffffff;
+  background-color: #0c7bb4;
+}
+ul.timor-nav-radius a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+ul.timor-tab:before, ul.timor-tab:after {
+  content: " ";
+  display: table;
+}
+ul.timor-tab:after {
+  clear: both;
+}
+ul.timor-tab > li {
+  float: left;
+  margin-bottom: -1px;
+}
+ul.timor-tab > li > a {
+  border: 1px solid transparent;
+}
+ul.timor-tab > li.timor-nav-active a {
+  color: gray;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+ul.timor-nav-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+ul.timor-nav-flex > li {
+  float: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+}
+ul.timor-nav-flex > li a {
+  text-align: center;
+}
+
+.timor-font-weight, .timor-table th, .timor-close, .timor-progress > .timor-progress-text {
+  font-weight: 700;
+}
+
+.timor-span-1, .timor-span-sm-1 {
+  float: left;
+  width: 8.33333%;
+}
+
+.timor-span-1 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-1 {
+  padding: 0 .3em;
+}
+
+.timor-span-2, .timor-span-sm-2 {
+  float: left;
+  width: 16.66667%;
+}
+
+.timor-span-2 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-2 {
+  padding: 0 .3em;
+}
+
+.timor-span-3, .timor-span-sm-3 {
+  float: left;
+  width: 25%;
+}
+
+.timor-span-3 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-3 {
+  padding: 0 .3em;
+}
+
+.timor-span-4, .timor-span-sm-4 {
+  float: left;
+  width: 33.33333%;
+}
+
+.timor-span-4 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-4 {
+  padding: 0 .3em;
+}
+
+.timor-span-5, .timor-span-sm-5 {
+  float: left;
+  width: 41.66667%;
+}
+
+.timor-span-5 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-5 {
+  padding: 0 .3em;
+}
+
+.timor-span-6, .timor-span-sm-6 {
+  float: left;
+  width: 50%;
+}
+
+.timor-span-6 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-6 {
+  padding: 0 .3em;
+}
+
+.timor-span-7, .timor-span-sm-7 {
+  float: left;
+  width: 58.33333%;
+}
+
+.timor-span-7 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-7 {
+  padding: 0 .3em;
+}
+
+.timor-span-8, .timor-span-sm-8 {
+  float: left;
+  width: 66.66667%;
+}
+
+.timor-span-8 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-8 {
+  padding: 0 .3em;
+}
+
+.timor-span-9, .timor-span-sm-9 {
+  float: left;
+  width: 75%;
+}
+
+.timor-span-9 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-9 {
+  padding: 0 .3em;
+}
+
+.timor-span-10, .timor-span-sm-10 {
+  float: left;
+  width: 83.33333%;
+}
+
+.timor-span-10 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-10 {
+  padding: 0 .3em;
+}
+
+.timor-span-11, .timor-span-sm-11 {
+  float: left;
+  width: 91.66667%;
+}
+
+.timor-span-11 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-11 {
+  padding: 0 .3em;
+}
+
+.timor-span-12, .timor-span-sm-12 {
+  float: left;
+  width: 100%;
+}
+
+.timor-span-12 {
+  padding: 0 1.5em;
+}
+
+.timor-span-sm-12 {
+  padding: 0 .3em;
+}
+
+h1, .h1 {
+  font-size: 32px;
+  line-height: 2em;
+}
+h1 > small, h1 > .small, .h1 > small, .h1 > .small {
+  font-size: 28px;
+  margin: 0 10px;
+  color: #999999;
+}
+
+h2, .h2 {
+  font-size: 28px;
+  line-height: 2em;
+}
+h2 > small, h2 > .small, .h2 > small, .h2 > .small {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #999999;
+}
+
+h3, .h3 {
+  font-size: 24px;
+  line-height: 2em;
+}
+h3 > small, h3 > .small, .h3 > small, .h3 > .small {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #999999;
+}
+
+h4, .h4 {
+  font-size: 20px;
+  line-height: 2em;
+}
+h4 > small, h4 > .small, .h4 > small, .h4 > .small {
+  font-size: 16px;
+  margin: 0 10px;
+  color: #999999;
+}
+
+h5, .h5 {
+  font-size: 16px;
+  line-height: 2em;
+}
+h5 > small, h5 > .small, .h5 > small, .h5 > .small {
+  font-size: 12px;
+  margin: 0 10px;
+  color: #999999;
+}
+
+h6, .h6 {
+  font-size: 12px;
+  line-height: 2em;
+}
+h6 > small, h6 > .small, .h6 > small, .h6 > .small {
+  font-size: 8px;
+  margin: 0 10px;
+  color: #999999;
+}
+
+.timor-fl-rt {
+  float: right;
+}
+
+.timor-fl-lt, dl.timor-dl-horizontal dt, dl.timor-dl-horizontal dd {
+  float: left;
+}
+
+.timor-clear {
+  clear: both;
+}
+
+.timor-clear-lt, dl.timor-dl-horizontal dd + dd, dl.timor-dl-horizontal dt {
+  clear: left;
+}
+
+.timor-clear-rt {
+  clear: right;
+}
+
+.timor-clear-rt, .timor-clear-lt, dl.timor-dl-horizontal dd + dd, dl.timor-dl-horizontal dt {
+  display: table;
+  content: " ";
+}
+
+.timor-box {
+  position: relative;
+}
+
+.timor-line {
+  border: 1px solid #e6e6e6;
+}
+
+.timor-line-right {
+  border-right: 1px solid #e6e6e6;
+}
+
+.timor-line-left {
+  border-left: 1px solid #e6e6e6;
+}
+
+.timor-line-bottom, ul.timor-tab, hr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.timor-line-top {
+  border-top: 1px solid #e6e6e6;
+}
+
+.timor-text-red, code {
+  color: #c9302c;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+.timor-text-success {
+  color: #449d44;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+.timor-text-primary {
+  color: #3071a9;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+.timor-text-info {
+  color: #31b0d5;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+.timor-text-warning {
+  color: #ec971f;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+.timor-text-danger {
+  color: #c9302c;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+code {
+  background-color: #e6e6e6;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0 5px;
+}
+
+.timor-text-a-l, dl.timor-dl-horizontal dd {
+  text-align: left;
+}
+
+.timor-text-a-r, dl.timor-dl-horizontal dt {
+  text-align: right;
+}
+
+.timor-text-a-j, p {
+  text-align: justify;
+}
+
+.timor-text-a-c {
+  text-align: center;
+}
+
+.timor-shadow {
+  -moz-box-shadow: 0 0 2px #b3b3b3;
+  -webkit-box-shadow: 0 0 2px #b3b3b3;
+  box-shadow: 0 0 2px #b3b3b3;
+}
+
+.timor-radius {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.timor-circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.timor-radius-lg {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+a.timor-disable {
+  color: #999999;
+  cursor: not-allowed;
+}
+
+p {
+  margin: 5px 0;
+}
+
+hr {
+  display: block;
+  content: " ";
+  height: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+ul > li > ul {
+  padding-left: 20px;
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+dl {
+  overflow: hidden;
+}
+dl.timor-dl-horizontal dt {
+  width: 150px;
+}
+dl.timor-dl-horizontal dd {
+  margin-left: 10px;
+}
+dl dt {
+  font-weight: 700;
+}
+
+input {
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="text"], input[type="password"] {
+  box-shadow: 0 0 4px #f2f2f2 inset;
+  padding: 5px;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+  width: 200px;
+  color: #b3b3b3;
+  font: 1.5em 1.5em;
+  border: 1px solid #e6e6e6;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border: 1px solid #cde1f1;
+  color: #000000;
+}
+input[type="text"].timor-input-lg, input[type="password"].timor-input-lg {
+  width: 300px;
+}
+input[type="text"].timor-input-sm, input[type="password"].timor-input-sm {
+  width: 80px;
+}
+input.timor-input-success {
+  border: 1px solid #80c780;
+  color: #80c780;
+}
+input.timor-input-warning {
+  border: 1px solid #f4c37d;
+  color: #f4c37d;
+}
+input.timor-input-info {
+  border: 1px solid #85d0e7;
+  color: #85d0e7;
+}
+input.timor-input-danger {
+  border: 1px solid #e27c79;
+  color: #e27c79;
+}
+input.timor-input-primary {
+  border: 1px solid #6aa3d5;
+  color: #6aa3d5;
+}
+
+.timor-input-group input {
+  display: block;
+}
+.timor-input-group input:last-of-type {
+  border-top-width: 0;
+}
+.timor-input-group input.timor-radius:first-of-type {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.timor-input-group input.timor-radius:last-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.timor-table {
+  width: 100%;
+  mix-width: 100%;
+}
+.timor-table th {
+  background-color: #428bca;
+  color: white;
+}
+.timor-table tr.timor-table-active td {
+  background-color: #e6e6e6;
+}
+.timor-table tr.timor-table-success td {
+  background-color: #a3d7a3;
+}
+.timor-table tr.timor-table-info td {
+  background-color: #b0e1ef;
+}
+.timor-table tr.timor-table-danger td {
+  background-color: #eba5a3;
+}
+.timor-table tr.timor-table-warning td {
+  background-color: #f8d9ac;
+}
+.timor-table td.timor-table-active {
+  background-color: #d9d9d9;
+}
+.timor-table td.timor-table-success {
+  background-color: #a3d7a3;
+}
+.timor-table td.timor-table-info {
+  background-color: #b0e1ef;
+}
+.timor-table td.timor-table-danger {
+  background-color: #eba5a3;
+}
+.timor-table td.timor-table-warning {
+  background-color: #f8d9ac;
+}
+
+.timor-table-hover tr:hover td {
+  background-color: #d9d9d9;
+}
+.timor-table-hover tr:hover td.timor-table-danger {
+  background-color: #e7908e;
+}
+.timor-table-hover tr:hover td.timor-table-active {
+  background-color: #cccccc;
+}
+.timor-table-hover tr:hover td.timor-table-info {
+  background-color: #9bd8eb;
+}
+.timor-table-hover tr:hover td.timor-table-warning {
+  background-color: #f6ce95;
+}
+.timor-table-hover tr:hover td.timor-table-success {
+  background-color: #91cf91;
+}
+.timor-table-hover tr.timor-table-danger:hover td {
+  background-color: #e7908e;
+}
+.timor-table-hover tr.timor-table-active:hover td {
+  background-color: #cccccc;
+}
+.timor-table-hover tr.timor-table-success:hover td {
+  background-color: #91cf91;
+}
+.timor-table-hover tr.timor-table-info:hover td {
+  background-color: #9bd8eb;
+}
+.timor-table-hover tr.timor-table-warning:hover td {
+  background-color: #f6ce95;
+}
+
+.timor-table-striped tr:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.timor-table td, .timor-table th {
+  border-collapse: collapse;
+  line-height: 1.5em;
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+}
+
+.timor-table-condensed td, .timor-table-condensed th {
+  padding: 2px 5px;
+}
+
+.timor-list-round {
+  list-style: circle;
+}
+
+.timor-position-fx {
+  position: fixed;
+}
+
+.timor-position-re {
+  position: relative;
+}
+
+.timor-position-abs {
+  position: absolute;
+}
+
+.timor-scroll-box {
+  display: table;
+  content: " ";
+}
+
+.timor-scroll-obj {
+  position: absolute;
+}
+
+.timor-btn {
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+  padding: 5px 10px;
+  text-decoration: none;
+  line-height: 1.5em;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-size: 16px;
+}
+.timor-btn.timor-btn-default {
+  border: 1px solid #e6e6e6;
+  color: #666666;
+  background-color: #ffffff;
+}
+.timor-btn.timor-btn-default:hover {
+  background-color: #e6e6e6;
+}
+.timor-btn.timor-btn-default.timor-btn-active {
+  background-color: #e6e6e6;
+  cursor: default;
+}
+.timor-btn.timor-btn-primary {
+  border: 1px solid #3071a9;
+  color: #fff;
+  background-color: #428bca;
+}
+.timor-btn.timor-btn-primary:hover {
+  background-color: #3071a9;
+}
+.timor-btn.timor-btn-primary.timor-btn-active {
+  background-color: #3071a9;
+  cursor: default;
+}
+.timor-btn.timor-btn-success {
+  border: 1px solid #449d44;
+  color: #fff;
+  background-color: #5cb85c;
+}
+.timor-btn.timor-btn-success:hover {
+  background-color: #449d44;
+}
+.timor-btn.timor-btn-success.timor-btn-active {
+  background-color: #449d44;
+  cursor: default;
+}
+.timor-btn.timor-btn-info {
+  border: 1px solid #31b0d5;
+  color: #fff;
+  background-color: #5bc0de;
+}
+.timor-btn.timor-btn-info:hover {
+  background-color: #31b0d5;
+}
+.timor-btn.timor-btn-info.timor-btn-active {
+  background-color: #31b0d5;
+  cursor: default;
+}
+.timor-btn.timor-btn-warning {
+  border: 1px solid #ec971f;
+  color: #fff;
+  background-color: #f0ad4e;
+}
+.timor-btn.timor-btn-warning:hover {
+  background-color: #ec971f;
+}
+.timor-btn.timor-btn-warning.timor-btn-active {
+  background-color: #ec971f;
+  cursor: default;
+}
+.timor-btn.timor-btn-danger {
+  border: 1px solid #c9302c;
+  color: #fff;
+  background-color: #d9534f;
+}
+.timor-btn.timor-btn-danger:hover {
+  background-color: #c9302c;
+}
+.timor-btn.timor-btn-danger.timor-btn-active {
+  background-color: #c9302c;
+  cursor: default;
+}
+.timor-btn.timor-btn-link {
+  border: none;
+  background: none;
+}
+.timor-btn.timor-btn-link:hover {
+  color: #428bca;
+  text-decoration: underline;
+}
+.timor-btn.timor-btn-disable {
+  border: 1px solid #d9d9d9;
+  color: #bfbfbf;
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
+.timor-btn-lg {
+  padding: 10px 15px;
+  font-size: 2rem;
+}
+
+.timor-btn-sm {
+  padding: 2px 5px;
+  font-size: 1.4rem;
+}
+
+.timor-btn-xm {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.timor-block {
+  display: block;
+  width: 100%;
+}
+
+.timor-btn-group .timor-btn.timor-radius, .timor-btn-group .timor-btn.timor-radius-lg {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.timor-btn-group .timor-btn.timor-radius:first-of-type {
+  border-left-width: 1px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.timor-btn-group .timor-btn.timor-radius-lg:first-of-type {
+  border-left-width: 1px;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.timor-btn-group .timor-btn.timor-radius:last-of-type {
+  border-right-width: 1px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.timor-btn-group .timor-btn.timor-radius-lg:last-of-type {
+  border-right-width: 1px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.timor-img {
+  max-width: 100%;
+  width: 100%;
+}
+
+img.timor-img-pad {
+  padding: 3px;
+}
+
+.timor-loading {
+  display: inline-table;
+  background: url(../images/timor-loading.gif) center center no-repeat #ffffff;
+}
+
+.timor-breadnav > li {
+  color: #999999;
+  display: inline-block;
+}
+.timor-breadnav > li a {
+  color: #428bca;
+  text-decoration: none;
+}
+.timor-breadnav > li a:hover {
+  color: #3071a9;
+}
+.timor-breadnav > li + li:before {
+  content: ">";
+  padding: 0 8px;
+}
+.timor-breadnav > li[class*='icon'] a {
+  margin-left: 5px;
+}
+
+.timor-breadnav-slash > li + li:before {
+  content: "/";
+}
+
+.timor-close {
+  color: #999999;
+  text-decoration: none;
+  width: 24px;
+  display: inline-block;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+}
+
+button.timor-close {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+a.timor-close:hover, button.timor-close:hover {
+  color: #666666;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.timor-panel {
+  border: 1px solid #e6e6e6;
+  border-bottom-width: 0;
+}
+.timor-panel .timor-panel-header, .timor-panel .timor-panel-content {
+  padding: 5px 10px;
+}
+.timor-panel .timor-panel-content {
+  border-bottom: 1px solid #e6e6e6;
+}
+.timor-panel .timor-panel-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #e6e6e6;
+}
+.timor-panel .timor-panel-header > .timor-panel-tag {
+  position: absolute;
+  right: 0;
+  vertical-align: -20%;
+  top: 0px;
+  background-color: #bfbfbf;
+  color: #666666;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 0 4px;
+}
+.timor-panel .timor-panel-header > .timor-close {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+.timor-panel-primary {
+  border: 1px solid #a6c8e6;
+  border-bottom-width: 0;
+}
+.timor-panel-primary .timor-panel-header, .timor-panel-primary .timor-panel-content {
+  padding: 5px 10px;
+}
+.timor-panel-primary .timor-panel-content {
+  border-bottom: 1px solid #a6c8e6;
+}
+.timor-panel-primary .timor-panel-header {
+  font-weight: 700;
+  font-size: 14px;
+  color: #245682;
+  line-height: 20px;
+  position: relative;
+  background-color: #b9d4ec;
+  border-bottom: 1px solid #a6c8e6;
+}
+.timor-panel-primary .timor-panel-header > .timor-panel-tag {
+  position: absolute;
+  right: 0;
+  vertical-align: -20%;
+  top: 0px;
+  background-color: #7eb0db;
+  color: #245682;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+.timor-panel-info {
+  border: 1px solid #c5e9f3;
+  border-bottom-width: 0;
+}
+.timor-panel-info .timor-panel-header, .timor-panel-info .timor-panel-content {
+  padding: 5px 10px;
+}
+.timor-panel-info .timor-panel-content {
+  border-bottom: 1px solid #c5e9f3;
+}
+.timor-panel-info .timor-panel-header {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2390b0;
+  line-height: 20px;
+  position: relative;
+  background-color: #daf1f8;
+  border-bottom: 1px solid #c5e9f3;
+}
+.timor-panel-info .timor-panel-header > .timor-panel-tag {
+  position: absolute;
+  right: 0;
+  vertical-align: -20%;
+  top: 0px;
+  background-color: #9bd8eb;
+  color: #2390b0;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+.timor-panel-danger {
+  border: 1px solid #f0b9b8;
+  border-bottom-width: 0;
+}
+.timor-panel-danger .timor-panel-header, .timor-panel-danger .timor-panel-content {
+  padding: 5px 10px;
+}
+.timor-panel-danger .timor-panel-content {
+  border-bottom: 1px solid #f0b9b8;
+}
+.timor-panel-danger .timor-panel-header {
+  font-weight: 700;
+  font-size: 14px;
+  color: #a02622;
+  line-height: 20px;
+  position: relative;
+  background-color: #f4cecd;
+  border-bottom: 1px solid #f0b9b8;
+}
+.timor-panel-danger .timor-panel-header > .timor-panel-tag {
+  position: absolute;
+  right: 0;
+  vertical-align: -20%;
+  top: 0px;
+  background-color: #e7908e;
+  color: #a02622;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+.timor-panel-warning {
+  border: 1px solid #fae3c4;
+  border-bottom-width: 0;
+}
+.timor-panel-warning .timor-panel-header, .timor-panel-warning .timor-panel-content {
+  padding: 5px 10px;
+}
+.timor-panel-warning .timor-panel-content {
+  border-bottom: 1px solid #fae3c4;
+}
+.timor-panel-warning .timor-panel-header {
+  font-weight: 700;
+  font-size: 14px;
+  color: #c77c11;
+  line-height: 20px;
+  position: relative;
+  background-color: #fceedb;
+  border-bottom: 1px solid #fae3c4;
+}
+.timor-panel-warning .timor-panel-header > .timor-panel-tag {
+  position: absolute;
+  right: 0;
+  vertical-align: -20%;
+  top: 0px;
+  background-color: #f6ce95;
+  color: #c77c11;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+.timor-panel-success {
+  border: 1px solid #b5dfb5;
+  border-bottom-width: 0;
+}
+.timor-panel-success .timor-panel-header, .timor-panel-success .timor-panel-content {
+  padding: 5px 10px;
+}
+.timor-panel-success .timor-panel-content {
+  border-bottom: 1px solid #b5dfb5;
+}
+.timor-panel-success .timor-panel-header {
+  font-weight: 700;
+  font-size: 14px;
+  color: #357935;
+  line-height: 20px;
+  position: relative;
+  background-color: #c7e6c7;
+  border-bottom: 1px solid #b5dfb5;
+}
+.timor-panel-success .timor-panel-header > .timor-panel-tag {
+  position: absolute;
+  right: 0;
+  vertical-align: -20%;
+  top: 0px;
+  background-color: #91cf91;
+  color: #357935;
+  margin: 5px 10px;
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+.timor-progress p {
+  margin: 0;
+}
+.timor-progress > .timor-progress-bar {
+  position: relative;
+  height: 16px;
+  border: 1px solid #e6e6e6;
+}
+.timor-progress > .timor-progress-bar > .timor-progress-total {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+}
+.timor-progress > .timor-progress-bar > .timor-progress-loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #999999;
+}
+.timor-progress > .timor-progress-bar > .timor-progress-loading:hover {
+  background-color: #666666;
+}
+.timor-progress > .timor-progress-text {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+.timor-progress.timor-progress-success > .timor-progress-bar {
+  border: 1px solid #449d44;
+}
+.timor-progress.timor-progress-success > .timor-progress-bar > .timor-progress-total {
+  background-color: #fff;
+}
+.timor-progress.timor-progress-success > .timor-progress-bar > .timor-progress-loading {
+  background-color: #6ec06e;
+}
+.timor-progress.timor-progress-success > .timor-progress-bar > .timor-progress-loading:hover {
+  background-color: #4cae4c;
+}
+.timor-progress.timor-progress-success > .timor-progress-text {
+  color: #357935;
+}
+.timor-progress.timor-progress-primary > .timor-progress-bar {
+  border: 1px solid #3071a9;
+}
+.timor-progress.timor-progress-primary > .timor-progress-bar > .timor-progress-total {
+  background-color: #fff;
+}
+.timor-progress.timor-progress-primary > .timor-progress-bar > .timor-progress-loading {
+  background-color: #5697d0;
+}
+.timor-progress.timor-progress-primary > .timor-progress-bar > .timor-progress-loading:hover {
+  background-color: #357ebd;
+}
+.timor-progress.timor-progress-primary > .timor-progress-text {
+  color: #245682;
+}
+.timor-progress.timor-progress-info > .timor-progress-bar {
+  border: 1px solid #31b0d5;
+}
+.timor-progress.timor-progress-info > .timor-progress-bar > .timor-progress-total {
+  background-color: #fff;
+}
+.timor-progress.timor-progress-info > .timor-progress-bar > .timor-progress-loading {
+  background-color: #70c8e2;
+}
+.timor-progress.timor-progress-info > .timor-progress-bar > .timor-progress-loading:hover {
+  background-color: #46b8da;
+}
+.timor-progress.timor-progress-info > .timor-progress-text {
+  color: #2390b0;
+}
+.timor-progress.timor-progress-warning > .timor-progress-bar {
+  border: 1px solid #ec971f;
+}
+.timor-progress.timor-progress-warning > .timor-progress-bar > .timor-progress-total {
+  background-color: #fff;
+}
+.timor-progress.timor-progress-warning > .timor-progress-bar > .timor-progress-loading {
+  background-color: #f2b866;
+}
+.timor-progress.timor-progress-warning > .timor-progress-bar > .timor-progress-loading:hover {
+  background-color: #eea236;
+}
+.timor-progress.timor-progress-warning > .timor-progress-text {
+  color: #c77c11;
+}
+.timor-progress.timor-progress-danger > .timor-progress-bar {
+  border: 1px solid #c9302c;
+}
+.timor-progress.timor-progress-danger > .timor-progress-bar > .timor-progress-total {
+  background-color: #fff;
+}
+.timor-progress.timor-progress-danger > .timor-progress-bar > .timor-progress-loading {
+  background-color: #de6764;
+}
+.timor-progress.timor-progress-danger > .timor-progress-bar > .timor-progress-loading:hover {
+  background-color: #d43f3a;
+}
+.timor-progress.timor-progress-danger > .timor-progress-text {
+  color: #a02622;
+}

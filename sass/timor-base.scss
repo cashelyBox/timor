@@ -1,0 +1,857 @@
+@import "compass/reset";
+
+@import "compass/css3";
+@import "_icon";
+
+$pre : timor;
+$font-color :#000000 ;
+$link-color:#0c78af ;
+$default-color:#ffffff;
+$danger-color:#d9534f;
+$primary-color:#428bca;
+$success-color:#5cb85c;
+$info-color:#5bc0de;
+$warning-color:#f0ad4e;
+$border-color:lighten($font-color,90%);
+$padding-space:10px;
+
+$font-family :"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif ;
+
+$font-size:10;
+
+html{
+    font-size: 10 / 16 * 100%;
+}
+body{
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: $font-family;
+}
+*{
+    @include box-sizing(border-box);
+}
+.#{$pre}-layout{
+    width: 100%;
+}
+.#{$pre}-layout-fix{
+    max-width: 1000px;
+}
+.#{$pre}-layout-fix,.#{$pre}-layout{
+    margin-left:auto;
+    margin-right:auto;
+}
+.#{$pre}-container{
+    padding:0 $padding-space;
+    width: 100%;
+    @extend .#{$pre}-layout-fix;
+    @extend html;
+}
+.#{$pre}-row{
+    &:after{
+        clear: both;
+    }
+    &:after,&:before{
+        content: " ";
+        display: table;
+    }
+}
+.#{$pre}-slider{
+    position: relative;
+    color:adjust-lightness($font-color,15%);
+    a{
+        color:adjust-lightness($font-color,30%);
+        display: block;
+        padding: 3px 0 3px 10px;
+        text-decoration: none;
+        &.active,&:hover{
+            color:$font-color;
+            background-color: lighten($font-color,95%);
+        }
+    }
+    li{
+        padding: 0 0 0 3px; 
+        &.#{$pre}-border-left{
+            margin: 3px 0;
+            border-left:3px solid lighten($link-color,10%); 
+            padding-left: 10px;
+        }
+    }
+}
+.#{$pre}-nav{
+    a{
+        color: adjust-lightness($font-color,100%);
+        text-decoration: none;
+    }
+}
+span{
+    &.#{$pre}-nav-span{
+        font-size: 12px;
+        margin-left:10px;
+        color: adjust-lightness($font-color,80%);
+    }
+}
+ul{
+    &.#{$pre}-list-horizontal{
+        li{
+            display: inline-table;
+        }
+    }
+    &.#{$pre}-nav{
+        >li{
+            >a{
+                display: block;
+                padding: 5px 15px;
+                color:$primary-color;
+                text-decoration: none;
+                &:hover{
+                    background-color:lighten($font-color,95%);
+                    color:darken($primary-color,10%);
+                }
+                
+            }
+            &.#{$pre}-disable{
+                    a{
+                        color: lighten($font-color,60%);
+                        cursor:not-allowed;
+                        &:hover{
+                                background: none;
+                            }
+                    }
+                    
+            }
+            &.#{$pre}-nav-active{
+                      a{
+                        color: #ffffff;
+                        background-color:adjust-lightness($link-color,1%); 
+                      }
+            }
+        }
+    }
+    &.#{$pre}-nav-radius{
+        a{
+            @include border-radius(3px);
+        }
+    }
+    &.#{$pre}-tab{
+        &:before,&:after{
+            content:" ";
+            display:table;
+        }
+        &:after{
+            clear: both;
+        }
+        @extend .#{$pre}-line-bottom;
+        >li{
+            float: left;
+            >a{
+                border: 1px solid transparent;
+            }
+            &.#{$pre}-nav-active{
+                a{
+                    color: lighten($font-color,50%);
+                    background-color:#ffffff;
+                    border:1px solid $border-color;
+                    border-bottom-color:transparent;
+                    cursor: default;
+                }  
+            }
+            margin-bottom: -1px;
+        }
+    }
+    &.#{$pre}-nav-flex{
+        width: 100%;
+        display:-webkit-box;
+        display:-moz-flex;
+        display:-ms-flex;
+        display: flex;
+        >li{
+            float: none;
+            -webkit-box-flex:1;
+            -webkit-flex:1;
+            -ms-flex:1;
+            flex:1;
+            display: block;
+            a{
+                text-align: center;
+            }
+        }
+    }
+}
+.#{$pre}-font-weight{
+    font-weight: 700;
+}
+@for $i from 1 to 13{
+    .#{$pre}-span-#{$i},.#{$pre}-span-sm-#{$i}{
+        float: left; 
+        width: $i / 12 * 100%;
+    }
+    .#{$pre}-span-#{$i}{
+        padding: 0 1.5em;
+    }
+    .#{$pre}-span-sm-#{$i}{
+        padding: 0 .3em;
+    }
+}
+@for $i from 1 to 7{
+    h#{$i},.h#{$i}{
+        font-size: 36px -  ($i * 4);
+        line-height: 2em;
+        > small,> .small{
+            font-size: 32px - ($i * 4);
+            margin: 0 10px;
+            color: adjust-lightness($font-color,60%);
+        }
+    }
+}
+//float block
+.#{$pre}-fl-rt{
+    float: right;
+}
+.#{$pre}-fl-lt{
+    float: left;
+}
+.#{$pre}-clear{
+    clear: both;
+}
+.#{$pre}-clear-lt{
+    clear: left;
+}
+.#{$pre}-clear-rt{
+    clear: right;
+}
+.#{$pre}-clear-rt,.#{$pre}-clear-lt{
+    display: table;
+    content: " ";
+}
+//demo
+.#{$pre}-box{
+    position: relative;
+}
+//border
+.#{$pre}-line{
+    border:1px solid $border-color;
+}
+.#{$pre}-line-right{
+    border-right:1px solid $border-color;
+}
+.#{$pre}-line-left{
+    border-left:1px solid $border-color;
+}
+.#{$pre}-line-bottom,hr{
+    border-bottom:1px solid $border-color;
+}
+.#{$pre}-line-top{
+    border-top:1px solid $border-color;
+}
+//text
+.#{$pre}-text-red{
+    color: darken($danger-color,10%);
+    font-family: $font-family;
+}
+.#{$pre}-text-success{
+    color: darken($success-color,10%);
+    font-family: $font-family;
+}
+.#{$pre}-text-primary{
+    color: darken($primary-color,10%);
+    font-family: $font-family;
+}
+.#{$pre}-text-info{
+    color: darken($info-color,10%);
+    font-family: $font-family;
+}
+.#{$pre}-text-warning{
+    color: darken($warning-color,10%);
+    font-family: $font-family;
+}
+.#{$pre}-text-danger{
+    color: darken($danger-color,10%);
+    font-family: $font-family;
+}
+code{
+    background-color: lighten($font-color,90%);
+    @include border-radius(6px);
+    @extend .#{$pre}-text-red;
+    padding: 0 5px;
+}
+@mixin text-align($align:left){
+    text-align: $align;
+}
+.#{$pre}-text-a-l{
+    @include text-align();
+}
+.#{$pre}-text-a-r{
+    @include text-align(right);
+}
+.#{$pre}-text-a-j{
+    @include text-align(justify);
+}
+.#{$pre}-text-a-c{
+    @include text-align(center);
+}
+//css3 
+.#{$pre}-shadow{
+    @include box-shadow(0 0 2px adjust-lightness($font-color,70%));
+}
+.#{$pre}-radius{
+    @include border-radius(3px);
+}
+.#{$pre}-circle{
+    @include border-radius(50%);
+}
+.#{$pre}-radius-lg{
+    @include border-radius(10px);
+}
+//html
+a{
+    &.#{$pre}-disable{
+        color: lighten($font-color,60%);
+        cursor:not-allowed;
+    }
+}
+.#{$pre}-p{
+//    margin: 10px 0
+}
+img{
+//    display: block;
+}
+p{
+    @extend .#{$pre}-text-a-j;
+    margin: 5px 0;
+}
+hr{
+    display: block;
+    content: " ";
+    height: 0;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+ul{
+    > li{
+//        list-style: disc;
+        >ul{
+            padding-left: 20px;
+    //    list-style: circle;
+    }
+  }
+}
+ol{
+    list-style:decimal;
+    padding-left: 20px;
+}
+dl{
+    &.#{$pre}-dl-horizontal{
+        dt,dd{
+            @extend .#{$pre}-fl-lt;
+        }
+        dt{
+            width: 150px;
+            @extend .#{$pre}-text-a-r;
+        }
+        dd{
+            margin-left: 10px;
+            @extend .#{$pre}-text-a-l;
+        }
+        dd+dd,dt{
+            @extend .#{$pre}-clear-lt;
+        }
+    }
+    dt{
+        font-weight: 700;
+    }
+    overflow: hidden;
+}
+input{
+    margin-left:auto;
+    margin-right:auto;
+    &[type="text"],&[type="password"]{
+        box-shadow: 0 0 4px adjust-lightness($font-color,95%) inset;
+        padding: 5px;
+        font-family: $font-family;
+        width: 200px;
+        color: lighten($font-color,70%);
+        font: 1.5em 1.5em;
+        border:1px solid $border-color;
+        &:focus{
+//        box-shadow: 0 0 4px lighten($primary-color,30%) inset;
+            border:1px solid lighten($primary-color,35%);
+            color:$font-color;
+        }    
+        &.#{$pre}-input-lg{
+            width: 300px;
+        }
+        &.#{$pre}-input-sm{
+            width: 80px;
+        }
+    }
+    &.#{$pre}-input-success{
+        border:1px solid lighten($success-color,10%);
+        color:lighten($success-color,10%);
+    }
+    &.#{$pre}-input-warning{
+        border:1px solid lighten($warning-color,10%);
+        color:lighten($warning-color,10%);
+    }
+    &.#{$pre}-input-info{
+        border:1px solid lighten($info-color,10%);
+        color:lighten($info-color,10%);
+    }
+    &.#{$pre}-input-danger{
+        border:1px solid lighten($danger-color,10%);
+        color:lighten($danger-color,10%);
+    }
+    &.#{$pre}-input-primary{
+        border:1px solid lighten($primary-color,10%);
+        color:lighten($primary-color,10%);
+    }
+}
+.#{$pre}-input-group{
+    input{
+        display: block;
+        &:last-of-type{
+            border-top-width: 0;
+        }
+        &.#{$pre}-radius{
+            &:first-of-type{
+                border-bottom-left-radius:0;
+                border-bottom-right-radius:0;
+            }
+            &:last-of-type{
+                border-top-left-radius:0;
+                border-top-right-radius:0;
+            }
+        }
+    }
+}
+.#{$pre}-table{
+    width: 100%;
+    mix-width:100%;
+    th{
+        @extend .#{$pre}-font-weight;
+        background-color:$primary-color;
+        color:lighten($primary-color,100%);
+    }
+    tr.#{$pre}-table-active{
+        td{
+            background-color:lighten($font-color,90%);
+        }
+    }
+    tr.#{$pre}-table-success{
+        td{
+            background-color:lighten($success-color,20%);
+        }
+    }
+    tr.#{$pre}-table-info{
+        td{
+            background-color:lighten($info-color,20%);
+        }
+    }
+    tr.#{$pre}-table-danger{
+        td{
+            background-color:lighten($danger-color,20%);
+        }
+       
+    }
+    tr.#{$pre}-table-warning{
+        td{
+            background-color:lighten($warning-color,20%);
+        }
+    }
+    td.#{$pre}-table-active{
+        background-color:lighten($font-color,85%);
+    }
+    td.#{$pre}-table-success{
+        background-color:lighten($success-color,20%);
+    }
+    td.#{$pre}-table-info{
+        background-color:lighten($info-color,20%);
+    }
+    td.#{$pre}-table-danger{
+        background-color:lighten($danger-color,20%);
+    }
+    td.#{$pre}-table-warning{
+        background-color:lighten($warning-color,20%);
+    }
+}
+.#{$pre}-table-hover{
+    tr:hover{
+       td{
+            background-color:lighten($font-color,85%);
+        }
+        td.#{$pre}-table-danger{
+            background-color:lighten($danger-color,15%);
+        }
+        td.#{$pre}-table-active{
+            background-color:lighten($font-color,80%);
+        }
+        td.#{$pre}-table-info{
+            background-color:lighten($info-color,15%);
+        }
+        td.#{$pre}-table-warning{
+            background-color:lighten($warning-color,15%);
+        }
+        td.#{$pre}-table-success{
+            background-color:lighten($success-color,15%);
+        }
+    }
+    tr.#{$pre}-table-danger:hover td{
+            background-color:lighten($danger-color,15%);
+    }
+    tr.#{$pre}-table-active:hover td{
+            background-color:lighten($font-color,80%);
+    }
+    tr.#{$pre}-table-success:hover td{
+            background-color:lighten($success-color,15%);
+    }
+    tr.#{$pre}-table-info:hover td{
+            background-color:lighten($info-color,15%);
+    }
+    tr.#{$pre}-table-warning:hover td{
+            background-color:lighten($warning-color,15%);
+    }
+}
+.#{$pre}-table-striped{
+    tr:nth-child(2n){
+        background-color:lighten($font-color,95%);
+    }
+}
+.#{$pre}-table td,.#{$pre}-table th{
+    border-collapse: collapse;
+    line-height: 1.5em;
+    border: 1px solid $border-color;
+    padding: 5px 10px;
+}
+.#{$pre}-table-condensed{
+    td,th{
+        padding: 2px 5px;
+    }
+}
+.#{$pre}-list-round{
+    list-style: circle;
+}
+.#{$pre}-position-fx{
+    position: fixed;
+}
+.#{$pre}-position-re{
+    position: relative;
+}
+.#{$pre}-position-abs{
+    position: absolute;
+}
+//js
+.#{$pre}-scroll-box{
+    display: table;
+    content: " ";
+}
+.#{$pre}-scroll-obj{
+    position: absolute;
+}
+//btn
+@mixin btn-style($color:$default-color,$colorF:#fff){
+    border: 1px solid darken($color,10%);
+    color:$colorF;
+        background-color:$color;
+        &:hover{ 
+            background-color:darken($color,10%);
+    }
+    &.#{$pre}-btn-active{
+        background-color:darken($color,10%);
+        cursor: default;
+    }
+}
+.#{$pre}-btn{ 
+    font-family: $font-family;
+//    @include border-radius(3px);
+    padding: 5px 10px;
+    text-decoration:none;
+    line-height: 1.5em;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-size: 16px;
+    &.#{$pre}-btn-default{
+        @include btn-style($default-color,lighten($font-color,40%));
+    }
+    &.#{$pre}-btn-primary{
+        @include btn-style($primary-color);
+    }
+    &.#{$pre}-btn-success{
+        @include btn-style($success-color);
+    }
+    &.#{$pre}-btn-info{
+        @include btn-style($info-color);
+    }
+    &.#{$pre}-btn-warning{
+        @include btn-style($warning-color);
+    }
+    &.#{$pre}-btn-danger{
+        @include btn-style($danger-color);
+    }
+    &.#{$pre}-btn-link{
+        border:none;
+        background:none;
+        &:hover{
+            color:$primary-color;
+            text-decoration: underline;
+        }
+    }
+    &.#{$pre}-btn-disable{
+        border: 1px solid lighten($font-color,85%);
+        color:lighten($font-color,75%);
+        background-color:lighten($font-color,90%);;
+        cursor:not-allowed;
+    }
+}
+.#{$pre}-btn-lg{
+    padding: 10px 15px;
+    font-size: 2rem;
+}
+.#{$pre}-btn-sm{
+    padding: 2px 5px;
+    font-size: 1.4rem;
+}
+.#{$pre}-btn-xm{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+.#{$pre}-block{
+    display: block;
+    width: 100%;
+}
+.#{$pre}-btn-group{
+    .#{$pre}-btn{
+//        @extend .#{$pre}-fl-lt;
+        &.#{$pre}-radius,&.#{$pre}-radius-lg{
+            @include border-radius(0);
+            border-left-width:0;
+            border-right-width:0;
+        }
+        &.#{$pre}-radius:first-of-type{
+            border-left-width:1px;
+            @include border-left-radius(3px);
+        }
+        &.#{$pre}-radius-lg:first-of-type{
+            border-left-width:1px;
+            @include border-left-radius(10px);
+        }
+        &.#{$pre}-radius:last-of-type{
+            border-right-width:1px;
+            @include border-right-radius(3px);
+        }
+        &.#{$pre}-radius-lg:last-of-type{
+            border-right-width:1px;
+            @include border-right-radius(10px);
+        }
+    }
+}
+.#{$pre}-img{
+    max-width: 100%;
+    width: 100%;
+}
+img{
+    &.#{$pre}-img-pad{
+        padding: 3px;
+    }
+}
+.#{$pre}-loading{
+    display:inline-table;
+    background: url(../images/timor-loading.gif) center center no-repeat #ffffff;
+}
+.#{$pre}-breadnav{
+    >li{
+        color: lighten($font-color,60%);
+        display:inline-block;
+        a{
+            color:$primary-color;
+            text-decoration: none;
+            &:hover{
+              color:darken($primary-color,10%);  
+            }
+        }
+        &+li:before{
+            content: ">";
+            padding: 0 8px;
+        }
+        &[class*='icon']{
+            a{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.#{$pre}-breadnav-slash{
+    >li{
+        &+li:before{
+            content: "/";
+        }
+    }
+}
+.#{$pre}-close{
+    color:lighten($font-color,60%);
+    text-decoration: none;
+    width:24px;
+    display:inline-block;
+    line-height:24px;
+    font-size:20px;
+    text-align:center;
+    font-family: $font-family;
+    @extend .#{$pre}-font-weight;
+}
+button.#{$pre}-close{
+    border:none;
+    background:none;
+    cursor:pointer;
+    padding:0;
+}
+a.#{$pre}-close:hover,button.#{$pre}-close:hover{
+    color:lighten($font-color,40%);
+    @include transition(all 0.3s ease 0s);
+}
+//panel
+@mixin panel($color){
+    border:1px solid lighten($color,25%);
+    border-bottom-width:0;
+    .#{$pre}-panel-header,.#{$pre}-panel-content{
+        padding: 5px 10px;
+    }
+    .#{$pre}-panel-content{
+        border-bottom:1px solid lighten($color,25%);
+    }
+    .#{$pre}-panel-header{
+        font-weight: 700;
+        font-size: 14px;
+        color:darken($color,20%);
+        line-height: 20px;
+        position: relative;
+        background-color:lighten($color,30%) ;
+        border-bottom:1px solid lighten($color,25%);
+        >.#{$pre}-panel-tag{
+            position: absolute;
+            right: 0;
+            vertical-align: -20%;
+            top: 0px;
+            background-color:lighten($color,15%);
+            color:darken($color,20%);
+            margin: 5px 10px;
+            font-size: 12px;
+            padding: 0 4px;
+        }
+    }
+}
+.#{$pre}-panel{
+    border:1px solid $border-color;
+    border-bottom-width:0;
+    .#{$pre}-panel-header,.#{$pre}-panel-content{
+        padding: 5px 10px;
+    }
+    .#{$pre}-panel-content{
+        border-bottom:1px solid $border-color;
+    }
+    .#{$pre}-panel-header{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        position: relative;
+        background-color:lighten($font-color,95%) ;
+        border-bottom:1px solid $border-color;
+        >.#{$pre}-panel-tag{
+            position: absolute;
+            right: 0;
+            vertical-align: -20%;
+            top: 0px;
+            background-color:lighten($font-color,75%);
+            color:lighten($font-color,40%);
+            margin: 5px 10px;
+            font-size: 12px;
+            padding: 0 4px;
+        }
+        >.#{$pre}-close{
+            position: absolute;
+            right: 5px;
+            top: 0;
+        }
+    }
+}
+.#{$pre}-panel-primary{
+    @include panel($primary-color);
+}
+.#{$pre}-panel-info{
+    @include panel($info-color);
+}
+.#{$pre}-panel-danger{
+    @include panel($danger-color);
+}
+.#{$pre}-panel-warning{
+    @include panel($warning-color);
+}
+.#{$pre}-panel-success{
+    @include panel($success-color);
+}
+//progress bar
+@mixin progress($color){
+    > .#{$pre}-progress-bar{
+        border:1px solid darken($color,10%);
+        > .#{$pre}-progress-total{
+            background-color:#fff;
+        }
+        > .#{$pre}-progress-loading{
+            background-color:lighten($color,5%);
+            &:hover{
+                background-color:darken($color,5%);
+            }
+        }
+    }
+    > .#{$pre}-progress-text{
+        color:darken($color,20%);
+    }
+}
+.#{$pre}-progress{
+    p{
+        margin:0;
+    }
+    > .#{$pre}-progress-bar{
+        position:relative;
+        height:16px; 
+        border:1px solid $border-color;
+        > .#{$pre}-progress-total{
+            width:100%;
+            height:100%;
+            display:block;
+            background-color:#fff;
+        }
+        > .#{$pre}-progress-loading{
+            position:absolute;
+            left:0;
+            top:0;
+            height:100%;
+            width:50%;
+            background-color:lighten($font-color,60%);
+            &:hover{
+                background-color:lighten($font-color,40%);
+            }
+        }
+    }
+    > .#{$pre}-progress-text{
+        text-align:center;
+        font-size:12px;
+        color:lighten($font-color,40%);
+        @extend .#{$pre}-font-weight;
+    }
+    &.#{$pre}-progress-success{
+        @include progress($success-color);
+    }
+    &.#{$pre}-progress-primary{
+        @include progress($primary-color);
+    }
+    &.#{$pre}-progress-info{
+        @include progress($info-color);
+    }
+    &.#{$pre}-progress-warning{
+        @include progress($warning-color);
+    }
+    &.#{$pre}-progress-danger{
+        @include progress($danger-color);
+    }
+}
